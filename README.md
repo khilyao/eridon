@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🌾 Eridon Farm Management Platform 🌱
 
-## Getting Started
+Welcome to the Eridon Farm Management Platform, a comprehensive solution for modern farming needs. This project is built using Next.js and TypeScript to provide a robust, scalable, and efficient web application.
 
-First, run the development server:
+## 🚀 Getting Started
 
-```bash
+### Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+
+- **Node.js**: Install Node.js from [nodejs.org](https://nodejs.org/)
+- **npm**: Node.js package manager, comes with Node.js. Alternatively, you can use **yarn**.
+
+### Installation
+
+1. **Clone the repository**:
+
+   ```sh
+   git clone https://github.com/khilyao/eridon.git
+   ```
+
+2. **Navigate to the project directory**:
+
+   ```sh
+   cd eridon
+   ```
+
+3. **Install dependencies**:
+   ```sh
+   npm install
+   ```
+   or
+   ```sh
+   yarn install
+   ```
+
+### Running the Development Server
+
+Start the development server:
+
+```sh
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+or
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```sh
+yarn dev
+```
