@@ -14,14 +14,30 @@
   opacity: 0;
   transition: transform 200ms linear, opacity 700ms linear;
 
+  @media screen and (min-width: 1024px) {
+    position: static;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: auto;
+    height: auto;
+
+    padding: 0;
+  }
+
   &.open {
     transform: translateX(0);
     opacity: 1;
   }
 }
 
-.link {
-  text-transform: uppercase;
+.linksWrapper {
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .list {
@@ -39,6 +55,26 @@
 
   color: rgb(43, 43, 43);
   list-style: none;
+
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+
+    margin-bottom: 0;
+    margin-right: 40px;
+    gap: 20px;
+
+    text-decoration: none;
+  }
+}
+
+.link {
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    color: rgb(34, 33, 33);
+    text-decoration: underline;
+  }
 }
 
 .helper {

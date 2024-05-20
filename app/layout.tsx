@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import StoreProvider from "@context/storeContext";
+import StoreProvider from "./context/storeContext";
 import "./globals.scss";
 import "modern-normalize";
 

@@ -4,6 +4,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media screen and (min-width: 1024px) {
+    height: 128px;
+  }
 }
 
 .logo {
