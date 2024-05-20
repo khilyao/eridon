@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className={s.main}>{/* <SideBar /> */}</main>
+      <main className={s.main}></main>
     </>
   );
 }

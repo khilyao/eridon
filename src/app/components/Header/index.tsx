@@ -7,9 +7,11 @@ import { useContext } from "react";
 import { storeContext } from "@context/context";
 import SideBar from "@components/SideBar";
 import logo from "@assets/logo.png";
+import { useMediaQuery } from "react-responsive";
 
 const Header = () => {
   const { isSideBarOpen, setIsSideBarOpen } = useContext(storeContext);
+  const isDesktop = useMediaQuery({ query: "(min-width: 1024px)" });
 
   return (
     <header className={s.header}>
@@ -19,13 +21,15 @@ const Header = () => {
         </Link>
         <SideBar />
       </nav>
-      <Hamburger
-        size={24}
-        toggled={isSideBarOpen}
-        toggle={() => {
-          setIsSideBarOpen(!isSideBarOpen);
-        }}
-      />
+      {!isDesktop && (
+        <Hamburger
+          size={24}
+          toggled={isSideBarOpen}
+          toggle={() => {
+            setIsSideBarOpen(!isSideBarOpen);
+          }}
+        />
+      )}
     </header>
   );
 };
