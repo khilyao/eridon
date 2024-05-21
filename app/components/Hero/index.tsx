@@ -9,7 +9,10 @@ const Hero = () => {
     <div className={s.heroBg}>
       <div
         className={s.titleBg}
-        style={{ backdropFilter: isSideBarOpen ? "none" : "" }}
+        style={{
+          backdropFilter: isSideBarOpen ? "none" : "",
+          background: isSideBarOpen ? "transparent" : "",
+        }}
       >
         <h1 className={s.title}>Сотрудничество, которое гарантирует успех</h1>
       </div>

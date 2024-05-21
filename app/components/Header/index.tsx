@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import s from "./header.module.scss";
 import { Fade as Hamburger } from "hamburger-react";
-import { useContext } from "react";
+import { use, useContext, useEffect, useState } from "react";
 import { storeContext } from "../../context/context";
 import SideBar from "../SideBar";
 import logo from "@assets/logo.png";
@@ -11,6 +11,7 @@ import { useMediaQuery } from "@/hooks/useMediaQuery";
 
 const Header = () => {
   const { isSideBarOpen, setIsSideBarOpen } = useContext(storeContext);
+  const [isHeroScrolled, setIsHeroScrolled] = useState(false);
   const isMedia768 = useMediaQuery(768);
   const isMedia1024 = useMediaQuery(1024);
   const isMedia1280 = useMediaQuery(1280);
@@ -21,10 +22,32 @@ const Header = () => {
     return 276;
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+      setIsHeroScrolled(scrollTop > 270);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [setIsHeroScrolled]);
+
   return (
-    <header className={s.header}>
+    <header
+      className={s.header}
+      style={{ background: isHeroScrolled ? "rgba(255, 255, 255, 0.9)" : "" }}
+    >
       <nav className={s.nav}>
-        <Link className={s.logo} href={"/"}>
+        <Link
+          className={s.logo}
+          href={"/"}
+          onClick={() => {
+            setIsSideBarOpen(false);
+          }}
+        >
           <Image
             width={calculateLogoWidth()}
             src={logo}

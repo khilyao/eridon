@@ -1,0 +1,161 @@
+.about {
+  padding: 30px 0 0;
+}
+
+.title {
+  margin-bottom: 28px;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.57;
+
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(43, 43, 43);
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 70px;
+
+    font-size: 32px;
+    line-height: 1.5;
+  }
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+}
+
+.leftBlock {
+  max-width: 931px;
+}
+
+.backdrop {
+  margin-bottom: 48px;
+
+  @media screen and (min-width: 1024px) {
+    position: relative;
+    padding: 6px 150px 6px 0px;
+    border-radius: 0px 180px 180px 0px;
+    background: linear-gradient(
+      163.24deg,
+      rgb(243, 242, 242) 9.655%,
+      rgb(235, 235, 235) 47.062%,
+      rgb(237, 237, 237) 62.229%
+    );
+  }
+}
+
+.backdrop::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100vw;
+  width: 100vw;
+  height: 100%;
+  background: inherit;
+  z-index: -1;
+}
+
+.commonInfo {
+  max-width: 630px;
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 54px;
+  }
+}
+
+.city {
+  display: block;
+  margin-bottom: 16px;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.57;
+
+  text-transform: uppercase;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 24px;
+    line-height: 2;
+  }
+}
+
+.register {
+  margin-bottom: 16px;
+  font-size: 12px;
+  line-height: 1.66;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 2;
+  }
+}
+
+.text {
+  margin-bottom: 16px;
+  font-size: 12px;
+  line-height: 1.66;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+.accent {
+  font-weight: 700;
+}
+
+.list {
+  padding-left: 30px;
+  list-style: square;
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 0;
+  }
+}
+
+.list .text {
+  margin-bottom: 8px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 1024px) {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-bottom: 0;
+  }
+}
+
+.cardImg {
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 0;
+  }
+}
+
+.name,
+.position {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.66;
+}
+
+.position {
+  font-weight: 500;
+}

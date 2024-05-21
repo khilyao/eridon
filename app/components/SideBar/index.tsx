@@ -1,7 +1,7 @@
 import Link from "next/link";
 import s from "./sideBar.module.scss";
 import { storeContext } from "../../context/context";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { useMediaQuery } from "@/hooks/useMediaQuery";
 
 const SideBar = () => {
@@ -9,15 +9,39 @@ const SideBar = () => {
   const isMedia1024 = useMediaQuery(1024);
   const isMedia1100 = useMediaQuery(1100);
 
-  return (
-    <aside
-      className={s.aside}
-      style={{
-        transform:
-          isSideBarOpen || !isMedia1024 ? "translateX(0)" : "translateX(100%)",
+  useEffect(() => {
+    const bodyRef = document.body;
+
+    if (bodyRef) {
+      if (isSideBarOpen) {
+        bodyRef.classList.add("no-scroll");
+      } else {
+        bodyRef.classList.remove("no-scroll");
+      }
+    }
+
+    return () => {
+      if (bodyRef) {
+        bodyRef.classList.remove("no-scroll");
+      }
+    };
+  }, [isSideBarOpen]);
+
+  const asideStyles = () => {
+    if (isMedia1024) {
+      return {
+        transform: isSideBarOpen || !isMedia1024 ? "translateX(-100%)" : "",
         opacity: isSideBarOpen || !isMedia1024 ? "1" : "0",
-      }}
-    >
+      };
+    }
+
+    return {
+      opacity: isSideBarOpen || !isMedia1024 ? "1" : "0",
+    };
+  };
+
+  return (
+    <aside className={s.aside} style={asideStyles()}>
       <ul className={s.list}>
         <li>
           <Link className={`${s.link}`} href="#first-section">

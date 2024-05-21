@@ -4,8 +4,6 @@ import StoreProvider from "./context/storeContext";
 import "./globals.scss";
 import "modern-normalize";
 
-const inter = Inter({ subsets: ["latin"] });
-
 export const metadata: Metadata = {
   title: "Eridon",
   description: "eridon",
@@ -18,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru">
-      <body className={inter.className}>
+      <body>
         <StoreProvider>{children}</StoreProvider>
       </body>
     </html>
