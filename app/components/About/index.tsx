@@ -2,12 +2,13 @@ import Image from "next/image";
 import director from "@assets/director.png";
 import s from "./about.module.scss";
 import { useMediaQuery } from "@/hooks/useMediaQuery";
+import InfoBlock from "../InfoBlock";
 
 const About = () => {
   const isMedia1024 = useMediaQuery(1024);
 
   return (
-    <section className={s.about}>
+    <section className={s.about} id="about">
       <div className="container">
         <h2 className={s.title}>О компании</h2>
         <div className={s.block}>
@@ -59,6 +60,33 @@ const About = () => {
             )}
           </div>
         </div>
+      </div>
+      <div className={s.infoCarousel}>
+        <InfoBlock title="Миссия">
+          <ul className={s.infoCard}>
+            <li className={s.item} style={{ marginBottom: "15px" }}>
+              Мы способствуем развитию аграрного потенциала Казахстана,
+              обеспечивая технологии выращивания для получения максимальной
+              уражайности и качества сельскохозяйственных культур
+            </li>
+            <li className={s.item}>
+              Мы являемся надежным партнером для всех сельскохозяйственных
+              производителей Казахстана
+            </li>
+          </ul>
+        </InfoBlock>
+        <InfoBlock title="Цель">
+          <ul>
+            <li className={s.item}>
+              Стать лидером на рынке комплексного обеспечения аграрных
+              производителей Казахстана
+            </li>
+            <li className={s.item}>
+              Идти вперед по пути постоянного совершенствования и инноваций
+            </li>
+          </ul>
+        </InfoBlock>
+        <InfoBlock title="Наши ценности"></InfoBlock>
       </div>
     </section>
   );

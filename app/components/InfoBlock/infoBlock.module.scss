@@ -1,0 +1,27 @@
+.card {
+  width: 330px;
+
+  border-radius: 8px;
+}
+
+.title {
+  padding: 16px 20px;
+
+  font-size: 14px;
+  line-height: 1.57;
+
+  text-align: center;
+  text-transform: uppercase;
+  background: rgb(255, 222, 0);
+}
+
+.thumb {
+  height: 162px;
+
+  background-color: #fff;
+  padding: 15px 25px 0px;
+
+  @media screen and (min-width: 1024px) {
+    height: 187px;
+  }
+}

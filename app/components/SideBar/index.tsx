@@ -44,7 +44,7 @@ const SideBar = () => {
     <aside className={s.aside} style={asideStyles()}>
       <ul className={s.list}>
         <li>
-          <Link className={`${s.link}`} href="#first-section">
+          <Link className={`${s.link}`} href="#about">
             О компании
           </Link>
         </li>
