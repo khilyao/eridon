@@ -13,13 +13,20 @@ const Header = () => {
   const { isSideBarOpen, setIsSideBarOpen } = useContext(storeContext);
   const isMedia768 = useMediaQuery(768);
   const isMedia1024 = useMediaQuery(1024);
+  const isMedia1280 = useMediaQuery(1280);
+
+  const calculateLogoWidth = () => {
+    if (isMedia768) return 142;
+    if (isMedia1280 && !isMedia768) return 200;
+    return 276;
+  };
 
   return (
     <header className={s.header}>
       <nav className={s.nav}>
         <Link className={s.logo} href={"/"}>
           <Image
-            width={!isMedia1024 ? 276 : 142}
+            width={calculateLogoWidth()}
             src={logo}
             alt="Eridon logo"
           ></Image>
