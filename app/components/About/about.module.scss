@@ -192,3 +192,35 @@
     font-size: 14px;
   }
 }
+
+.grid {
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 10px;
+
+  @media screen and (min-width: 1024px) {
+    padding-top: 20px;
+  }
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.benefit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  margin-bottom: 5px;
+}
+
+.benefitText {
+  font-size: 12px;
+  line-height: 1.33;
+}

@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import s from "./header.module.scss";
 import { Fade as Hamburger } from "hamburger-react";
-import { use, useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { storeContext } from "../../context/context";
 import SideBar from "../SideBar";
 import logo from "@assets/logo.png";
@@ -11,7 +11,7 @@ import { useMediaQuery } from "@/hooks/useMediaQuery";
 
 const Header = () => {
   const { isSideBarOpen, setIsSideBarOpen } = useContext(storeContext);
-  const [isHeroScrolled, setIsHeroScrolled] = useState(false);
+  const [scrollPosition, setScrollPosition] = useState(0);
   const isMedia768 = useMediaQuery(768);
   const isMedia1024 = useMediaQuery(1024);
   const isMedia1280 = useMediaQuery(1280);
@@ -25,7 +25,7 @@ const Header = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY || document.documentElement.scrollTop;
-      setIsHeroScrolled(scrollTop > 270);
+      setScrollPosition(scrollTop);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -33,13 +33,27 @@ const Header = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [setIsHeroScrolled]);
+  }, []);
+
+  const interpolateColor = (scrollTop: number) => {
+    const startColor = { r: 241, g: 244, b: 246, a: 0.6 };
+    const endColor = { r: 255, g: 255, b: 255, a: 1 };
+    const maxScroll = 840;
+
+    const t = Math.min(scrollTop / maxScroll, 1);
+
+    const r = Math.round(startColor.r + t * (endColor.r - startColor.r));
+    const g = Math.round(startColor.g + t * (endColor.g - startColor.g));
+    const b = Math.round(startColor.b + t * (endColor.b - startColor.b));
+    const a = startColor.a + t * (endColor.a - startColor.a);
+
+    return `rgba(${r}, ${g}, ${b}, ${a})`;
+  };
+
+  const backgroundColor = interpolateColor(scrollPosition);
 
   return (
-    <header
-      className={s.header}
-      style={{ background: isHeroScrolled ? "rgba(255, 255, 255, 0.9)" : "" }}
-    >
+    <header className={s.header} style={{ background: backgroundColor }}>
       <nav className={s.nav}>
         <Link
           className={s.logo}
@@ -48,11 +62,7 @@ const Header = () => {
             setIsSideBarOpen(false);
           }}
         >
-          <Image
-            width={calculateLogoWidth()}
-            src={logo}
-            alt="Eridon logo"
-          ></Image>
+          <Image width={calculateLogoWidth()} src={logo} alt="Eridon logo" />
         </Link>
         <SideBar />
       </nav>

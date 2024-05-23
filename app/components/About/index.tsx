@@ -3,6 +3,11 @@ import director from "@assets/director.png";
 import s from "./about.module.scss";
 import { useMediaQuery } from "@/hooks/useMediaQuery";
 import InfoBlock from "../InfoBlock";
+import ProfileIcon from "@assets/profile.svg";
+import GroupOfProfiles from "@assets/groupOfProfiles.svg";
+import Like from "@assets/like.svg";
+import Star from "@assets/star.svg";
+import Rocket from "@assets/rocket.svg";
 
 const About = () => {
   const isMedia1024 = useMediaQuery(1024);
@@ -77,7 +82,7 @@ const About = () => {
         </InfoBlock>
         <InfoBlock title="Цель">
           <ul>
-            <li className={s.item}>
+            <li className={s.item} style={{ marginBottom: "35px" }}>
               Стать лидером на рынке комплексного обеспечения аграрных
               производителей Казахстана
             </li>
@@ -86,7 +91,34 @@ const About = () => {
             </li>
           </ul>
         </InfoBlock>
-        <InfoBlock title="Наши ценности"></InfoBlock>
+        <InfoBlock title="Наши ценности">
+          <div className={s.grid}>
+            <div className={s.row}>
+              <div className={s.benefit}>
+                <ProfileIcon className={s.icon} />
+                <p className={s.benefitText}>Наши клиенты</p>
+              </div>
+              <div className={s.benefit}>
+                <GroupOfProfiles className={s.icon} />
+                <p className={s.benefitText}>Наша команда</p>
+              </div>
+            </div>
+            <div className={s.benefit}>
+              <Star className={s.icon} />
+              <p className={s.benefitText}>Качество</p>
+            </div>
+            <div className={s.row}>
+              <div className={s.benefit}>
+                <Rocket className={s.icon} />
+                <p className={s.benefitText}>Инновации</p>
+              </div>
+              <div className={s.benefit}>
+                <Like className={s.icon} />
+                <p className={s.benefitText}>Профессионализм</p>
+              </div>
+            </div>
+          </div>
+        </InfoBlock>
       </div>
     </section>
   );
