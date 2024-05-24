@@ -37,7 +37,7 @@ const Header = () => {
 
   const interpolateColor = (scrollTop: number) => {
     const startColor = { r: 241, g: 244, b: 246, a: 0.6 };
-    const endColor = { r: 255, g: 255, b: 255, a: 1 };
+    const endColor = { r: 255, g: 255, b: 255, a: 0.95 };
     const maxScroll = 840;
 
     const t = Math.min(scrollTop / maxScroll, 1);

@@ -49,7 +49,7 @@ const SideBar = () => {
           </Link>
         </li>
         <li>
-          <Link className={`${s.link}`} href="#second-section">
+          <Link className={`${s.link}`} href="#solutions">
             Готовые решения
           </Link>
         </li>

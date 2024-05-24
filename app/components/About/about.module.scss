@@ -1,5 +1,9 @@
 .about {
-  padding: 30px 0 0;
+  padding: 30px 0 54px;
+
+  @media screen and (min-width: 1024px) {
+    padding: 45px 0 60px;
+  }
 }
 
 .title {
@@ -26,23 +30,33 @@
   flex-direction: column;
   align-items: center;
 
+  margin-bottom: 40px;
+
   @media screen and (min-width: 1024px) {
     display: flex;
     justify-content: center;
     flex-direction: row;
+
+    margin-bottom: 80px;
   }
 }
 
 .leftBlock {
   max-width: 931px;
-}
 
-.backdrop {
   margin-bottom: 48px;
 
   @media screen and (min-width: 1024px) {
+    margin-bottom: 0px;
+  }
+}
+
+.backdrop {
+  @media screen and (min-width: 1024px) {
     position: relative;
     padding: 6px 150px 6px 0px;
+    margin-bottom: 0;
+
     border-radius: 0px 180px 180px 0px;
     background: linear-gradient(
       163.24deg,
@@ -132,8 +146,6 @@
   flex-direction: column;
   align-items: center;
 
-  margin-bottom: 40px;
-
   @media screen and (min-width: 1024px) {
     margin-top: 40px;
     margin-left: 70px;
@@ -149,7 +161,7 @@
   margin-bottom: 8px;
 
   @media screen and (min-width: 1024px) {
-    margin-bottom: 0;
+    margin-bottom: 17px;
   }
 }
 
@@ -158,6 +170,11 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 1.66;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.57;
+  }
 }
 
 .position {

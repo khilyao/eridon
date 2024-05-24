@@ -2,7 +2,7 @@ import Image from "next/image";
 import director from "@assets/director.png";
 import s from "./about.module.scss";
 import { useMediaQuery } from "@/hooks/useMediaQuery";
-import InfoBlock from "../InfoBlock";
+import InfoBlock from "../Card";
 import ProfileIcon from "@assets/profile.svg";
 import GroupOfProfiles from "@assets/groupOfProfiles.svg";
 import Like from "@assets/like.svg";
@@ -57,12 +57,11 @@ const About = () => {
               width={isMedia1024 ? 136 : 288}
               alt="Вадим Кролевец"
             />
-            {isMedia1024 && (
-              <>
-                <h3 className={s.name}>Вадим Кролевец</h3>
-                <span className={s.position}>Директор Эридон Казахстан</span>
-              </>
-            )}
+
+            <>
+              <h3 className={s.name}>Вадим Кролевец</h3>
+              <span className={s.position}>Директор Эридон Казахстан</span>
+            </>
           </div>
         </div>
       </div>

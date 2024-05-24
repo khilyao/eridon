@@ -1,0 +1,27 @@
+.grid {
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 8px;
+}
+
+.mainTitle {
+  margin-bottom: 22px;
+  text-align: center;
+
+  font-size: 14px;
+  line-height: 1.57;
+
+  color: rgb(43, 43, 43);
+  text-transform: uppercase;
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 90px;
+
+    font-size: 32px;
+    line-height: 1.5;
+
+    color: rgb(43, 43, 43);
+  }
+}

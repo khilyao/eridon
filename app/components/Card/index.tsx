@@ -6,7 +6,7 @@ type Props = {
   children?: ReactNode;
 };
 
-const InfoBlock = ({ title, children }: Props) => {
+const Card = ({ title, children }: Props) => {
   return (
     <div className={s.card}>
       <h4 className={s.title}>{title}</h4>
@@ -15,4 +15,4 @@ const InfoBlock = ({ title, children }: Props) => {
   );
 };
 
-export default InfoBlock;
+export default Card;
