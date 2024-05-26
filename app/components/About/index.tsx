@@ -2,7 +2,7 @@ import Image from "next/image";
 import director from "@assets/director.png";
 import s from "./about.module.scss";
 import { useMediaQuery } from "@/hooks/useMediaQuery";
-import InfoBlock from "../Card";
+import Card from "@components/Card";
 import ProfileIcon from "@assets/profile.svg";
 import GroupOfProfiles from "@assets/groupOfProfiles.svg";
 import Like from "@assets/like.svg";
@@ -66,7 +66,7 @@ const About = () => {
         </div>
       </div>
       <div className={s.infoCarousel}>
-        <InfoBlock title="Миссия">
+        <Card title="Миссия">
           <ul className={s.infoCard}>
             <li className={s.item} style={{ marginBottom: "15px" }}>
               Мы способствуем развитию аграрного потенциала Казахстана,
@@ -78,8 +78,8 @@ const About = () => {
               производителей Казахстана
             </li>
           </ul>
-        </InfoBlock>
-        <InfoBlock title="Цель">
+        </Card>
+        <Card title="Цель">
           <ul>
             <li className={s.item} style={{ marginBottom: "35px" }}>
               Стать лидером на рынке комплексного обеспечения аграрных
@@ -89,10 +89,10 @@ const About = () => {
               Идти вперед по пути постоянного совершенствования и инноваций
             </li>
           </ul>
-        </InfoBlock>
-        <InfoBlock title="Наши ценности">
-          <div className={s.grid}>
-            <div className={s.row}>
+        </Card>
+        <Card title="Наши ценности">
+          <div className={s.grid} style={{ paddingBottom: 20 }}>
+            <div className={s.column}>
               <div className={s.benefit}>
                 <ProfileIcon className={s.icon} />
                 <p className={s.benefitText}>Наши клиенты</p>
@@ -102,11 +102,13 @@ const About = () => {
                 <p className={s.benefitText}>Наша команда</p>
               </div>
             </div>
-            <div className={s.benefit}>
-              <Star className={s.icon} />
-              <p className={s.benefitText}>Качество</p>
+            <div className={s.column} style={{ justifyContent: "center" }}>
+              <div className={s.benefit}>
+                <Star className={s.icon} />
+                <p className={s.benefitText}>Качество</p>
+              </div>
             </div>
-            <div className={s.row}>
+            <div className={s.column}>
               <div className={s.benefit}>
                 <Rocket className={s.icon} />
                 <p className={s.benefitText}>Инновации</p>
@@ -117,7 +119,7 @@ const About = () => {
               </div>
             </div>
           </div>
-        </InfoBlock>
+        </Card>
       </div>
     </section>
   );

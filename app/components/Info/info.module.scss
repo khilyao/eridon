@@ -1,8 +1,25 @@
+.infoBlock {
+  position: absolute;
+}
+
 .list {
   padding: 5px;
+  padding-left: 15px;
+
+  background: #fff;
+
+  border: 1px solid rgb(97, 128, 86);
+  border-radius: 6px;
 }
 
 .item {
-  font-size: 10px;
+  font-size: 4px;
   line-height: 1.8;
+}
+
+.icon {
+  width: 8px;
+  height: 8px;
+
+  cursor: pointer;
 }

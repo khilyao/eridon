@@ -17,7 +17,7 @@ const Header = () => {
   const isMedia1280 = useMediaQuery(1280);
 
   const calculateLogoWidth = () => {
-    if (isMedia768) return 142;
+    if (isMedia768) return 180;
     if (isMedia1280 && !isMedia768) return 200;
     return 276;
   };
@@ -62,7 +62,12 @@ const Header = () => {
             setIsSideBarOpen(false);
           }}
         >
-          <Image width={calculateLogoWidth()} src={logo} alt="Eridon logo" />
+          <Image
+            width={calculateLogoWidth()}
+            style={{ marginTop: 5 }}
+            src={logo}
+            alt="Eridon logo"
+          />
         </Link>
         <SideBar />
       </nav>

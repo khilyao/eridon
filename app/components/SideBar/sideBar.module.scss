@@ -6,7 +6,7 @@
   width: 100vw;
   height: 100vh;
 
-  padding: 80px 40px 120px;
+  padding: 110px 40px 120px;
 
   background-color: #fff;
 
@@ -91,7 +91,10 @@
 }
 
 .helper {
-  padding: 6px 12px;
+  display: inline-block;
+  padding: 4px 12px;
+
+  margin-bottom: 30px;
 
   font-family: "Helvetica Neue";
   font-size: 14px;
@@ -111,6 +114,8 @@
   }
 
   @media screen and (min-width: 1024px) {
+    margin-bottom: 0;
+    margin-right: 10px;
   }
 
   @media screen and (min-width: 1100px) {
@@ -126,5 +131,25 @@
 
   @media screen and (min-width: 1536px) {
     margin-right: 70px;
+  }
+}
+
+.langPicker {
+  display: block;
+
+  text-transform: uppercase;
+
+  background-color: transparent;
+  border: none;
+
+  color: #000;
+  -webkit-appearance: auto;
+
+  color: rgb(15, 15, 15);
+  font-size: 12px;
+  line-height: 1.57;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 14px;
   }
 }

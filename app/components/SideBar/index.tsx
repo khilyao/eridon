@@ -54,7 +54,7 @@ const SideBar = () => {
           </Link>
         </li>
         <li>
-          <Link className={`${s.link}`} href="#second-section">
+          <Link className={`${s.link}`} href="#agricultural">
             Новости
           </Link>
         </li>
@@ -67,12 +67,11 @@ const SideBar = () => {
       <Link className={`${s.link} ${s.helper}`} href="#second-section">
         Агроконсультация
       </Link>
-      {!isMedia1100 && (
-        <select className={s.langPicker} name="lang-picker" id="lang-picker">
-          <option value="ru">Рус</option>
-          <option value="eng">Eng</option>
-        </select>
-      )}
+      <select className={s.langPicker} name="lang-picker" id="lang-picker">
+        <option value="ru">Рус</option>
+        <option value="eng">Eng</option>
+        <option value="kz">Kz</option>
+      </select>
     </aside>
   );
 };
