@@ -3,18 +3,45 @@
 }
 
 .list {
-  padding: 5px;
-  padding-left: 15px;
-
+  padding-left: 2px;
+  padding-right: 2px;
   background: #fff;
 
-  border: 1px solid rgb(97, 128, 86);
   border-radius: 6px;
+  border: 1px solid rgb(97, 128, 86);
+
+  list-style: none;
+
+  transition: opacity 150ms linear, transform 150ms linear;
+  cursor: default;
+
+  @media screen and (min-width: 1024px) {
+    padding: 3px;
+    padding-left: 7px;
+  }
 }
 
 .item {
+  position: relative;
+
+  padding-left: 3px;
+
   font-size: 4px;
   line-height: 1.8;
+
+  &::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #000;
+    font-size: 1.2em;
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 10px;
+    padding-left: 8px;
+  }
 }
 
 .icon {
@@ -22,4 +49,9 @@
   height: 8px;
 
   cursor: pointer;
+
+  @media screen and (min-width: 1024px) {
+    width: 29px;
+    height: 29px;
+  }
 }

@@ -26,13 +26,17 @@
   }
 
   @media screen and (min-width: 1400px) {
+    padding: 0 40px;
+  }
+
+  @media screen and (min-width: 1536px) {
     padding: 0 50px;
   }
 }
 
 .logo {
   @media screen and (min-width: 1024px) {
-    margin-right: 40px;
+    margin-right: 20px;
   }
 
   z-index: 5;

@@ -18,8 +18,8 @@ const Header = () => {
 
   const calculateLogoWidth = () => {
     if (isMedia768) return 180;
-    if (isMedia1280 && !isMedia768) return 200;
-    return 276;
+    if (isMedia1280 && !isMedia768) return 220;
+    return 330;
   };
 
   useEffect(() => {

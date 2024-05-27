@@ -85,6 +85,12 @@
     margin-right: 47px;
   }
 
+  @media screen and (min-width: 768px) {
+    width: 200px;
+    height: auto;
+    margin-right: 60px;
+  }
+
   @media screen and (min-width: 1024px) {
     width: 363px;
     height: auto;
@@ -145,6 +151,15 @@
   border-radius: 8px;
   border: none;
   background: rgb(255, 222, 0);
+
+  transition: background 200ms linear;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background: rgb(238, 207, 11);
+  }
 
   @media screen and (min-width: 1024px) {
     height: 40px;

@@ -54,7 +54,7 @@ const SideBar = () => {
           </Link>
         </li>
         <li>
-          <Link className={`${s.link}`} href="#agricultural">
+          <Link className={`${s.link}`} href="#news">
             Новости
           </Link>
         </li>
@@ -64,7 +64,7 @@ const SideBar = () => {
           </Link>
         </li>
       </ul>
-      <Link className={`${s.link} ${s.helper}`} href="#second-section">
+      <Link className={`${s.link} ${s.helper}`} href="#agricultural">
         Агроконсультация
       </Link>
       <select className={s.langPicker} name="lang-picker" id="lang-picker">

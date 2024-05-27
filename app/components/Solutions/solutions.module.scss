@@ -6,16 +6,24 @@
   }
 }
 
+.containerWrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .grid {
   display: grid;
   flex-direction: column;
   justify-content: center;
-  gap: 20px;
+  width: 300px;
+  gap: 28px;
   position: relative;
 
   @media screen and (min-width: 1024px) {
     padding-bottom: 40px;
-    gap: 40px;
+    gap: 44px;
+    width: 980px;
     background-color: transparent;
 
     &::before {

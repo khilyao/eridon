@@ -40,41 +40,49 @@ const Agricaltural = () => {
                 <h3 className={s.subTitle}>Заявка на агроконсультацию</h3>
               )}
               <input
+                type="text"
                 className={s.field}
                 placeholder="ФИО"
                 {...register("name", { required: true })}
               />
               <input
+                type="text"
                 className={s.field}
                 placeholder="Компания"
                 {...register("company", { required: true })}
               />
               <input
+                type="text"
                 className={s.field}
                 placeholder="Должность"
                 {...register("position", { required: true })}
               />
               <input
+                type="tel"
                 className={s.field}
                 placeholder="Телефон"
                 {...register("phone", { required: true })}
               />
               <input
+                type="email"
                 className={s.field}
                 placeholder="Email"
                 {...register("email", { required: true })}
               />
               <input
+                type="text"
                 className={s.field}
                 placeholder="Место нахождения"
                 {...register("place", { required: true })}
               />
               <input
+                type="text"
                 className={s.field}
                 placeholder="Площадь, га"
                 {...register("square", { required: true })}
               />
               <input
+                type="text"
                 className={s.field}
                 placeholder="Культура"
                 {...register("culture", { required: true })}
