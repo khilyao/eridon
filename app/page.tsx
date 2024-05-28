@@ -4,6 +4,7 @@ import Hero from "@components/Hero";
 import About from "@components/About";
 import Solutions from "@components/Solutions";
 import Agricaltural from "./components/Agricultural";
+import FileUpload from "./components/FileUpload";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <About />
         <Solutions />
         <Agricaltural />
+        {/* <FileUpload /> */}
       </main>
     </>
   );

@@ -70,7 +70,7 @@ const SideBar = () => {
       <select className={s.langPicker} name="lang-picker" id="lang-picker">
         <option value="ru">Рус</option>
         <option value="eng">Eng</option>
-        <option value="kz">Kz</option>
+        <option value="kz">ҚЗ</option>
       </select>
     </aside>
   );
