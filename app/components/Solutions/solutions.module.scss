@@ -39,6 +39,10 @@
       transform: translateX(-50%);
     }
   }
+
+  @media screen and (min-width: 1280px) {
+    gap: 60px;
+  }
 }
 
 .mainTitle {

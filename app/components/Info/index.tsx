@@ -27,7 +27,11 @@ const Info = ({ list, position, translate, width = "auto" }: Props) => {
   };
 
   return (
-    <div className={s.infoBlock} style={inlineStyles}>
+    <div
+      className={s.infoBlock}
+      style={inlineStyles}
+      onMouseLeave={() => setIsOpen(false)}
+    >
       <InfoIcon
         className={s.icon}
         onClick={() => {
