@@ -5,6 +5,7 @@ import About from "@components/About";
 import Solutions from "@components/Solutions";
 import Agricaltural from "./components/Agricultural";
 import FileUpload from "./components/FileUpload";
+import News from "./components/News";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <About />
         <Solutions />
         <Agricaltural />
+        <News />
         {/* <FileUpload /> */}
       </main>
     </>

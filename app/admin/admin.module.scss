@@ -1,0 +1,64 @@
+.section {
+  padding-top: 100px;
+
+  @media screen and (min-width: 1024px) {
+    padding-top: 180px;
+  }
+}
+
+.title {
+  margin-bottom: 20px;
+
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 22px;
+}
+
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  max-width: 200px;
+}
+
+.legend {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.field {
+  // width: ;
+}
+
+.submitBtn {
+  width: 100%;
+  padding: 2px;
+  margin-top: 24px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.67;
+  text-align: center;
+  color: rgb(36, 36, 36);
+  border-radius: 8px;
+  border: none;
+  background: rgb(255, 222, 0);
+  transition: background 200ms linear;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background: rgb(238, 207, 11);
+  }
+
+  @media screen and (min-width: 1024px) {
+    height: 40px;
+  }
+}
