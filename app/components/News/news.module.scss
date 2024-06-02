@@ -25,6 +25,11 @@
   align-items: center;
 }
 
+.cardWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .img {
   width: 100%;
   // width: 320px;
@@ -93,12 +98,16 @@
 }
 
 .details {
-  display: inline-block;
+  display: block;
   padding: 8px 12px;
+
+  font-size: 12px;
 
   background-color: #ffb700;
   border-radius: 6px;
-  font-size: 12px;
+  border: none;
+
+  cursor: pointer;
 
   @media screen and (min-width: 1024px) {
     padding: 10px 15px;
