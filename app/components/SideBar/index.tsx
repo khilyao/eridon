@@ -3,11 +3,13 @@ import s from "./sideBar.module.scss";
 import { storeContext } from "../../context/context";
 import { useContext, useEffect } from "react";
 import { useMediaQuery } from "@/hooks/useMediaQuery";
+import { useScrollWithOffset } from "@/hooks/useScrollWithOffset";
 
 const SideBar = () => {
-  const { isSideBarOpen } = useContext(storeContext);
+  const { isSideBarOpen, setIsSideBarOpen } = useContext(storeContext);
   const isMedia1024 = useMediaQuery(1024);
-  const isMedia1100 = useMediaQuery(1100);
+  const offset = isMedia1024 ? 70 : 140;
+  const handleScrollWithOffset = useScrollWithOffset(offset);
 
   useEffect(() => {
     const bodyRef = document.body;
@@ -44,27 +46,62 @@ const SideBar = () => {
     <aside className={s.aside} style={asideStyles()}>
       <ul className={s.list}>
         <li>
-          <Link className={`${s.link}`} href="#about">
+          <Link
+            className={s.link}
+            href="#about"
+            onClick={(e) => {
+              handleScrollWithOffset(e.nativeEvent);
+              setIsSideBarOpen(false);
+            }}
+          >
             О компании
           </Link>
         </li>
         <li>
-          <Link className={`${s.link}`} href="#solutions">
+          <Link
+            className={s.link}
+            href="#solutions"
+            onClick={(e) => {
+              handleScrollWithOffset(e.nativeEvent);
+              setIsSideBarOpen(false);
+            }}
+          >
             Готовые решения
           </Link>
         </li>
         <li>
-          <Link className={`${s.link}`} href="#news">
+          <Link
+            className={s.link}
+            href="#news"
+            onClick={(e) => {
+              handleScrollWithOffset(e.nativeEvent);
+              setIsSideBarOpen(false);
+            }}
+          >
             Новости
           </Link>
         </li>
         <li>
-          <Link className={`${s.link}`} href="#second-section">
+          <Link
+            className={s.link}
+            href="#contacts"
+            onClick={(e) => {
+              handleScrollWithOffset(e.nativeEvent);
+              setIsSideBarOpen(false);
+            }}
+          >
             Контакты
           </Link>
         </li>
       </ul>
-      <Link className={`${s.link} ${s.helper}`} href="#agricultural">
+      <Link
+        className={`${s.link} ${s.helper}`}
+        href="#agricultural"
+        onClick={(e) => {
+          handleScrollWithOffset(e.nativeEvent);
+          setIsSideBarOpen(false);
+        }}
+      >
         Агроконсультация
       </Link>
       <select className={s.langPicker} name="lang-picker" id="lang-picker">

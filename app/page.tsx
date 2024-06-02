@@ -5,7 +5,7 @@ import About from "@components/About";
 import Solutions from "@components/Solutions";
 import Agricaltural from "@components/Agricultural";
 import News from "@components/News";
-// import Contacts from "@components/Contacts";
+import Contacts from "@components/Contacts";
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
         <Solutions />
         <Agricaltural />
         <News />
-        {/* <Contacts /> */}
+        <Contacts />
       </main>
     </>
   );

@@ -40,7 +40,7 @@ const News = () => {
   };
 
   return (
-    <section className={s.newsBlock}>
+    <section id="news" className={s.newsBlock}>
       <div className="container">
         <h2 className={s.title}>Новости</h2>
         {isMedia1024 ? (
@@ -74,7 +74,6 @@ const News = () => {
               </div>
               <Swiper
                 autoHeight
-                loop
                 spaceBetween={16}
                 slidesPerView={3}
                 slidesPerGroup={3}
