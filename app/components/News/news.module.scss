@@ -1,5 +1,5 @@
 .newsBlock {
-  padding: 55px 0;
+  padding: 50px 0 20px;
 
   @media screen and (min-width: 1024px) {
     padding: 80px 0;
@@ -102,7 +102,9 @@
   padding: 8px 12px;
 
   font-size: 12px;
+  font-weight: 500;
 
+  color: #000;
   background-color: #ffb700;
   border-radius: 6px;
   border: none;
