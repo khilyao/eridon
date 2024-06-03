@@ -58,10 +58,12 @@ const News = () => {
                     alt={title}
                   />
                   <div className={s.cardBody}>
-                    <h3 className={s.cardTitle}>{title}</h3>
+                    <h3 className={s.cardTitle}>{title[lang]}</h3>
                     <div className={s.bottomBlock}>
                       <span className={s.date}>{date}</span>
-                      <button className={s.details}>Подробнее</button>
+                      <button className={s.details}>
+                        {translations[lang].news.details}
+                      </button>
                     </div>
                   </div>
                 </a>
@@ -93,10 +95,13 @@ const News = () => {
                         alt={title}
                       />
                       <div className={s.cardBody}>
-                        <h3 className={s.cardTitle}>{title}</h3>
+                        <h3 className={s.cardTitle}>{title[lang]}</h3>
                         <div className={s.bottomBlock}>
                           <span className={s.date}>{date}</span>
-                          <button className={s.details}>Подробнее</button>
+                          <button className={s.details}>
+                            {" "}
+                            {translations[lang].news.details}
+                          </button>
                         </div>
                       </div>
                     </a>

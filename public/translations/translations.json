@@ -37,7 +37,131 @@
       "professionalism": "Professionalism"
     },
     "solutions": {
-      "title": "Ready-made solutions"
+      "title": "Ready-made solutions",
+      "wheatArr": [
+        [
+          "Acceleration of germination",
+          "Increase in field germination and energy of germination",
+          "Development of the root system"
+        ],
+        [
+          "Increase in the tillering coefficient in areas of sufficient moisture or under irrigation",
+          "Activation of photosynthesis"
+        ],
+        [
+          "Increase in the tillering coefficient in areas of root system development",
+          "Influence on the size of the flag and sub-flag leaf",
+          "Relief of herbicide stress"
+        ],
+        ["Development of the root system", "Relief of herbicide stress"],
+        [
+          "Improvement of pollination",
+          "Increase in the number of grains in the ear",
+          "Stress management",
+          "Improvement of photosynthesis"
+        ]
+      ],
+      "sunflowerArr": [
+        [
+          "Improvement and extension of the work of soil herbicides",
+          "Prevention of herbicide leaching"
+        ],
+        ["Relief of herbicide stress"],
+        [
+          "Increased resistance to diseases and stresses",
+          "Activation of photosynthesis"
+        ],
+        [
+          "Improvement of pollination",
+          "Increase in the number of seeds in the basket",
+          "Stress management",
+          "Activation of photosynthesis"
+        ]
+      ],
+      "linenArr": [
+        [
+          "Acceleration of germination",
+          "Increase in field germination and energy of germination",
+          "Development of the root system",
+          "Improvement of the fixation of preparations on seeds"
+        ],
+        [
+          "Stimulation of the formation of lateral shoots",
+          "Activation of photosynthesis"
+        ],
+        [
+          "Improvement of pollination, increase in the number of seeds in the boxes",
+          "Activation of photosynthesis",
+          "Stress management"
+        ]
+      ],
+      "lentilsArr": [
+        [
+          "Improvement of pollination, increase in the number of seeds in the boxes",
+          "Activation of photosynthesis",
+          "Stress management"
+        ],
+        ["Stem elongation", "Setting more pods"],
+        [
+          "Improvement of pollination",
+          "Increase in the number of seeds in the pod",
+          "Stress management",
+          "Enhancement of photosynthesis",
+          "Reduction of abortion"
+        ],
+        ["Prevention of pod cracking", "Increase in seed size"]
+      ],
+      "cornArr": [
+        [
+          "Acceleration of germination",
+          "Increase in field germination and energy of germination",
+          "Development of the root system"
+        ],
+        ["Development of the root system", "Relief of herbicide stress"],
+        [
+          "Setting more seeds in a row",
+          "Increase in vegetative mass",
+          "Activation of photosynthesis"
+        ],
+        [
+          "Improvement of pollination",
+          "Activation of photosynthesis",
+          "Stress management"
+        ]
+      ],
+      "rapeArr": [
+        [
+          "Increase in the number of lateral branches",
+          "Setting more pods",
+          "Relief of herbicide stress",
+          "Activation of photosynthesis"
+        ],
+        [
+          "Increase in the number of lateral branches",
+          "Setting more pods",
+          "Relief of herbicide stress",
+          "Activation of photosynthesis"
+        ],
+        ["Prevention of pod cracking", "Increase in seed size"]
+      ],
+      "soybeansArr": [
+        [
+          "Acceleration of germination",
+          "Increase in field germination and energy of germination",
+          "Development of the root system"
+        ],
+        [
+          "Increase in the number of lateral branches",
+          "Activation of photosynthesis"
+        ],
+        [
+          "Improvement of pollination",
+          "Increase in the number of seeds in the pod",
+          "Stress management",
+          "Activation of photosynthesis",
+          "Reduction of abortion"
+        ]
+      ]
     },
     "agroconsulting": {
       "title": "Agroconsultation",
@@ -52,7 +176,8 @@
       "submit": "Submit"
     },
     "news": {
-      "title": "News"
+      "title": "News",
+      "details": "More details"
     },
     "contacts": {
       "heading": "Contacts",
@@ -144,7 +269,121 @@
       "professionalism": "Профессионализм"
     },
     "solutions": {
-      "title": "Готовые решения"
+      "title": "Готовые решения",
+      "wheatArr": [
+        [
+          "Ускорение проростания",
+          "Увеличение полевой всхожести и энерги прорастания",
+          "Развитие кореневой системы"
+        ],
+        [
+          "Увеличение коэффициента кущения в зонах достаточного увлажнения или на орошении",
+          "Активация фотосинтеза"
+        ],
+        [
+          "Увеличение коэффициента кущения в зонах Развитие еореневой системы",
+          "Влияние на размер флагового и подфлагового листа",
+          "Снятие гербицидного стресса"
+        ],
+        ["Развитие корневой системы", "Снятие гербецидного стресса"],
+        [
+          "Улучшение опыления",
+          "Увеличение количества зерен в колосе",
+          "Борьба со стрессами",
+          "Улучшение фотосинтеза"
+        ]
+      ],
+      "sunflowerArr": [
+        [
+          "Улучшение и продление работы почвенных гербицидов",
+          "Предотвращение промывания гербицидов"
+        ],
+        ["Снятие гербицидного стресса"],
+        [
+          "Повышение устойчивости к болезням и стрессам",
+          "Активизация фотосинтеза"
+        ],
+        [
+          "Улучшение опыления",
+          "Увеличение количества семян в корзинке",
+          "Борьба со стрессами",
+          "Активизация фотосинтеза"
+        ]
+      ],
+      "linenArr": [
+        [
+          "Ускорение прорастания",
+          "Увеличение полевой всхожести и энергии прорастания",
+          "Развитие корневой системы",
+          "Улучшение фиксации препаратов на семенах"
+        ],
+        ["Стимуляция образования боковых побегов", "Активизация фотосинтеза"],
+        [
+          "Улучшение опыления, увеличение количества семян в коробочках",
+          "Активация фотосинтеза",
+          "Борьба со стрессами"
+        ]
+      ],
+      "lentilsArr": [
+        [
+          "Улучшение опыления, увеличение количества семян в коробочках",
+          "Активация фотосинтеза",
+          "Борьба со стрессами"
+        ],
+        ["Удлинение стебля", "Закладка большего количества бобов"],
+        [
+          "Улучшение опыления",
+          "Увеличение количества семян в бобе",
+          "Борьба со стрессами",
+          "Усиление фотосинтеза",
+          "Уменьшение абортации"
+        ],
+        ["Предотвращение растрескивания бобов", "Увеличение крупности семян"]
+      ],
+      "cornArr": [
+        [
+          "Ускорение прорастания",
+          "Увеличение полевой всхожести и энергии прорастания",
+          "Развитие корневой системы"
+        ],
+        ["Развитие корневой системы", "Снятие гербицидного стресса"],
+        [
+          "Закладка большего количества зёрен в ряду",
+          "Увеличение вегетативной массы",
+          "Активизация фотосинтеза"
+        ],
+        ["Улучшение опыления", "Активизация фотосинтеза", "Борьба со стрессами"]
+      ],
+      "rapeArr": [
+        [
+          "Увеличение количества боковых веток",
+          "Закладка большего количества стручков",
+          "Снятие гербицидного стресса",
+          "Активизация фотосинтеза"
+        ],
+        [
+          "Увеличение количества боковых веток",
+          "Закладка большего количества стручков",
+          "Снятие гербицидного стресса",
+          "Активизация фотосинтеза"
+        ],
+        ["Предотвращение растрескивания бобов", "Увеличение крупности семян"]
+      ],
+      "soybeansArr": [
+        [
+          "Ускорение прорастания",
+          "Увеличение полевой всхожести и энергии прорастания",
+          "Развитие корневой системы"
+        ],
+        ["Увеличение количества боковых ветвей", "Активизация фотосинтеза"],
+        [
+          "Улучшение опыления",
+          "Увеличение количества семян в бобе",
+          "Борьба со стрессами",
+          "Активизация фотосинтеза",
+          "Уменьшение абортации"
+        ]
+      ]
     },
     "agroconsulting": {
       "title": "Агроконсультация",
@@ -159,7 +398,8 @@
       "submit": "Отправить"
     },
     "news": {
-      "title": "Новости"
+      "title": "Новости",
+      "details": "Подробнее"
     },
     "contacts": {
       "heading": "Контакты",
@@ -210,7 +450,7 @@
       "news": "Новости",
       "contact": "Контакты",
       "dateOfBirth": "Эридон Казахстан 2024",
-      "policy": ""
+      "policy": "Вы принимаете \"Политику конфиденциальности\""
     }
   },
   "kz": {
@@ -251,7 +491,128 @@
       "professionalism": "Кәсібилік"
     },
     "solutions": {
-      "title": "Дайын шешімдер"
+      "title": "Дайын шешімдер",
+      "wheatArr": [
+        [
+          "Өсімді тездету",
+          "Далада өну мен өну энергиясын арттыру",
+          "Тамыр жүйесінің дамуы"
+        ],
+        [
+          "Ылғал жеткілікті аймақтарда немесе суару кезінде түптену коэффициентін арттыру",
+          "Фотосинтезді белсендіру"
+        ],
+        [
+          "Тамыр жүйесін дамыту аймақтарында түптену коэффициентін арттыру",
+          "Туыстық жапырақтар мен қосымша жапырақтардың көлеміне әсер ету",
+          "Гербицидтік стресс жеңілдету"
+        ],
+        ["Тамыр жүйесінің дамуы", "Гербицидтік стресс жеңілдету"],
+        [
+          "Тозаңдануды жақсарту",
+          "Құлақтағы дәндердің санын көбейту",
+          "Стресске қарсы күресу",
+          "Фотосинтезді жақсарту"
+        ]
+      ],
+      "sunflowerArr": [
+        [
+          "Топырақ гербицидтерінің жұмысын жақсарту және ұзарту",
+          "Гербицидтердің шайылуын болдырмау"
+        ],
+        ["Гербицидтік стресс жеңілдету"],
+        [
+          "Аурулар мен стресстерге төзімділікті арттыру",
+          "Фотосинтезді белсендіру"
+        ],
+        [
+          "Тозаңдануды жақсарту",
+          "Себеттегі дәндердің санын көбейту",
+          "Стресске қарсы күресу",
+          "Фотосинтезді белсендіру"
+        ]
+      ],
+      "linenArr": [
+        [
+          "Өсімді тездету",
+          "Далада өну мен өну энергиясын арттыру",
+          "Тамыр жүйесінің дамуы",
+          "Тұқымдарға препараттардың бекітілуін жақсарту"
+        ],
+        [
+          "Бүйірлік өркендердің қалыптасуын ынталандыру",
+          "Фотосинтезді белсендіру"
+        ],
+        [
+          "Тозаңдануды жақсарту, қораптардағы дәндердің санын көбейту",
+          "Фотосинтезді белсендіру",
+          "Стресске қарсы күресу"
+        ]
+      ],
+      "lentilsArr": [
+        [
+          "Тозаңдануды жақсарту, қораптардағы дәндердің санын көбейту",
+          "Фотосинтезді белсендіру",
+          "Стресске қарсы күресу"
+        ],
+        ["Сабақтың ұзарту", "Көптеген бұршақтарды салу"],
+        [
+          "Тозаңдануды жақсарту",
+          "Бұршақтағы дәндердің санын көбейту",
+          "Стресске қарсы күресу",
+          "Фотосинтезді күшейту",
+          "Аборттауын азайту"
+        ],
+        ["Бұршақтардың жарылуын болдырмау", "Тұқымдардың көлемін ұлғайту"]
+      ],
+      "cornArr": [
+        [
+          "Өсімді тездету",
+          "Далада өну мен өну энергиясын арттыру",
+          "Тамыр жүйесінің дамуы"
+        ],
+        ["Тамыр жүйесінің дамуы", "Гербицидтік стресс жеңілдету"],
+        [
+          "Қатардағы дәндердің санын көбейту",
+          "Өсімді масса көлемін көбейту",
+          "Фотосинтезді белсендіру"
+        ],
+        [
+          "Тозаңдануды жақсарту",
+          "Фотосинтезді белсендіру",
+          "Стресске қарсы күресу"
+        ]
+      ],
+      "rapeArr": [
+        [
+          "Жанама бұтақтардың санын көбейту",
+          "Көбірек бұршақ салу",
+          "Гербицидтік стресс жеңілдету",
+          "Фотосинтезді белсендіру"
+        ],
+        [
+          "Жанама бұтақтардың санын көбейту",
+          "Көбірек бұршақ салу",
+          "Гербицидтік стресс жеңілдету",
+          "Фотосинтезді белсендіру"
+        ],
+        ["Бұршақтардың жарылуын болдырмау", "Тұқымдардың көлемін ұлғайту"]
+      ],
+      "soybeansArr": [
+        [
+          "Өсімді тездету",
+          "Далада өну мен өну энергиясын арттыру",
+          "Тамыр жүйесінің дамуы"
+        ],
+        ["Жанама бұтақтардың санын көбейту", "Фотосинтезді белсендіру"],
+        [
+          "Тозаңдануды жақсарту",
+          "Бұршақтағы дәндердің санын көбейту",
+          "Стресске қарсы күресу",
+          "Фотосинтезді белсендіру",
+          "Аборттауын азайту"
+        ]
+      ]
     },
     "agroconsulting": {
       "title": "Агроконсультация",
@@ -266,7 +627,8 @@
       "submit": "Жіберу"
     },
     "news": {
-      "title": "Жаңалықтар"
+      "title": "Жаңалықтар",
+      "details": "Қосымша мәліметтер"
     },
     "contacts": {
       "heading": "Контактілер",

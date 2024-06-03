@@ -7,15 +7,6 @@ import linen from "@assets/linen.png";
 import sunflower from "@assets/sunflower.png";
 import rape from "@assets/rape.png";
 import s from "./solutions.module.scss";
-import {
-  wheatArr,
-  cornArr,
-  sunflowerArr,
-  linenArr,
-  lentilsArr,
-  rapeArr,
-  soybeansArr,
-} from "@/db/solutions";
 import { useMediaQuery } from "@/hooks/useMediaQuery";
 import Info from "@components/Info";
 import { useLang } from "@/hooks/useLang";
@@ -29,7 +20,7 @@ const Solutions = () => {
       <div className={s.row}>
         <Image src={wheat} alt="Пшеница" />
         <Info
-          list={wheatArr[0]}
+          list={translations[lang].solutions.wheatArr[0]}
           position={isMedia1024 ? { left: 4, top: 15 } : { left: 30, top: 70 }}
           width={isMedia1024 ? 66 : 170}
           translate={
@@ -37,7 +28,7 @@ const Solutions = () => {
           }
         />
         <Info
-          list={wheatArr[1]}
+          list={translations[lang].solutions.wheatArr[1]}
           position={
             isMedia1024 ? { left: 43, top: 10 } : { left: 150, top: 35 }
           }
@@ -47,7 +38,7 @@ const Solutions = () => {
           }
         />
         <Info
-          list={wheatArr[2]}
+          list={translations[lang].solutions.wheatArr[2]}
           position={isMedia1024 ? { left: 93, top: 7 } : { left: 310, top: 12 }}
           width={isMedia1024 ? 71 : 172}
           translate={
@@ -55,7 +46,7 @@ const Solutions = () => {
           }
         />
         <Info
-          list={wheatArr[3]}
+          list={translations[lang].solutions.wheatArr[3]}
           position={isMedia1024 ? { left: 140, top: 0 } : { left: 490, top: 4 }}
           width={isMedia1024 ? 48 : 130}
           translate={
@@ -63,7 +54,7 @@ const Solutions = () => {
           }
         />
         <Info
-          list={wheatArr[4]}
+          list={translations[lang].solutions.wheatArr[4]}
           position={
             isMedia1024 ? { left: 190, top: -4 } : { left: 624, top: 4 }
           }
@@ -76,7 +67,7 @@ const Solutions = () => {
       <div className={s.row}>
         <Image src={sunflower} alt="Подсолнечник" />
         <Info
-          list={sunflowerArr[0]}
+          list={translations[lang].solutions.sunflowerArr[0]}
           position={isMedia1024 ? { left: 4, top: 15 } : { left: 30, top: 70 }}
           width={isMedia1024 ? 60 : 140}
           translate={
@@ -84,7 +75,7 @@ const Solutions = () => {
           }
         />
         <Info
-          list={sunflowerArr[1]}
+          list={translations[lang].solutions.sunflowerArr[1]}
           position={
             isMedia1024 ? { left: 70, top: 14 } : { left: 250, top: 44 }
           }
@@ -94,7 +85,7 @@ const Solutions = () => {
           }
         />
         <Info
-          list={sunflowerArr[2]}
+          list={translations[lang].solutions.sunflowerArr[2]}
           position={
             isMedia1024 ? { left: 125, top: 7 } : { left: 410, top: 18 }
           }
@@ -104,7 +95,7 @@ const Solutions = () => {
           }
         />
         <Info
-          list={sunflowerArr[3]}
+          list={translations[lang].solutions.sunflowerArr[3]}
           position={
             isMedia1024 ? { left: 150, top: -3 } : { left: 494, top: 0 }
           }
@@ -117,7 +108,7 @@ const Solutions = () => {
       <div className={s.row}>
         <Image src={linen} alt="Лён" />
         <Info
-          list={linenArr[0]}
+          list={translations[lang].solutions.linenArr[0]}
           position={isMedia1024 ? { left: 20, top: 13 } : { left: 30, top: 70 }}
           width={isMedia1024 ? 70 : 158}
           translate={
@@ -125,7 +116,7 @@ const Solutions = () => {
           }
         />
         <Info
-          list={linenArr[1]}
+          list={translations[lang].solutions.linenArr[1]}
           position={
             isMedia1024 ? { left: 112, top: 6 } : { left: 270, top: 40 }
           }
@@ -135,7 +126,7 @@ const Solutions = () => {
           }
         />
         <Info
-          list={linenArr[2]}
+          list={translations[lang].solutions.linenArr[2]}
           position={
             isMedia1024 ? { left: 200, top: 3 } : { left: 660, top: 30 }
           }
@@ -148,15 +139,15 @@ const Solutions = () => {
       <div className={s.row}>
         <Image src={lentils} alt="Чечевица" />
         <Info
-          list={lentilsArr[0]}
+          list={translations[lang].solutions.lentilsArr[0]}
           position={isMedia1024 ? { left: 4, top: 15 } : { left: 40, top: 68 }}
           width={isMedia1024 ? 58 : 140}
           translate={
-            isMedia1024 ? "translate(-4px, 0px)" : "translate(-4px, 0px)"
+            isMedia1024 ? "translate(10px, -10px)" : "translate(35px, -30px)"
           }
         />
         <Info
-          list={lentilsArr[1]}
+          list={translations[lang].solutions.lentilsArr[1]}
           position={
             isMedia1024 ? { left: 110, top: 4 } : { left: 300, top: 40 }
           }
@@ -166,7 +157,7 @@ const Solutions = () => {
           }
         />
         <Info
-          list={lentilsArr[2]}
+          list={translations[lang].solutions.lentilsArr[2]}
           position={
             isMedia1024 ? { left: 150, top: 0 } : { left: 568, top: 40 }
           }
@@ -176,7 +167,7 @@ const Solutions = () => {
           }
         />
         <Info
-          list={lentilsArr[3]}
+          list={translations[lang].solutions.lentilsArr[3]}
           position={
             isMedia1024 ? { left: 262, top: 10 } : { left: 860, top: 50 }
           }
@@ -189,13 +180,13 @@ const Solutions = () => {
       <div className={s.row}>
         <Image src={corn} alt="Кукуруза" />
         <Info
-          list={cornArr[0]}
+          list={translations[lang].solutions.cornArr[0]}
           position={isMedia1024 ? { left: 4, top: 15 } : { left: 20, top: 74 }}
           width={isMedia1024 ? 64 : 160}
           translate={isMedia1024 ? "translate(-2px, 0)" : "translate(20px, 0)"}
         />
         <Info
-          list={cornArr[1]}
+          list={translations[lang].solutions.cornArr[1]}
           position={
             isMedia1024 ? { left: 73, top: 12 } : { left: 240, top: 50 }
           }
@@ -205,7 +196,7 @@ const Solutions = () => {
           }
         />
         <Info
-          list={cornArr[2]}
+          list={translations[lang].solutions.cornArr[2]}
           position={
             isMedia1024 ? { left: 115, top: 2 } : { left: 370, top: 40 }
           }
@@ -215,7 +206,7 @@ const Solutions = () => {
           }
         />
         <Info
-          list={cornArr[3]}
+          list={translations[lang].solutions.cornArr[3]}
           position={isMedia1024 ? { left: 162, top: 0 } : { left: 550, top: 0 }}
           width={isMedia1024 ? 53 : 136}
           translate={
@@ -226,7 +217,7 @@ const Solutions = () => {
       <div className={s.row}>
         <Image src={rape} alt="Рапс" />
         <Info
-          list={rapeArr[0]}
+          list={translations[lang].solutions.rapeArr[0]}
           position={isMedia1024 ? { left: 80, top: 6 } : { left: 270, top: 30 }}
           width={isMedia1024 ? 64 : 200}
           translate={
@@ -234,7 +225,7 @@ const Solutions = () => {
           }
         />
         <Info
-          list={rapeArr[1]}
+          list={translations[lang].solutions.rapeArr[1]}
           position={
             isMedia1024 ? { left: 220, top: 0 } : { left: 740, top: 20 }
           }
@@ -244,7 +235,7 @@ const Solutions = () => {
           }
         />
         <Info
-          list={rapeArr[2]}
+          list={translations[lang].solutions.rapeArr[2]}
           position={
             isMedia1024 ? { left: 290, top: 0 } : { left: 970, top: 20 }
           }
@@ -257,7 +248,7 @@ const Solutions = () => {
       <div className={s.row}>
         <Image src={soybeans} alt="Соя" />
         <Info
-          list={soybeansArr[0]}
+          list={translations[lang].solutions.soybeansArr[0]}
           position={isMedia1024 ? { left: 4, top: 15 } : { left: 20, top: 66 }}
           width={isMedia1024 ? 58 : 160}
           translate={
@@ -265,7 +256,7 @@ const Solutions = () => {
           }
         />
         <Info
-          list={soybeansArr[1]}
+          list={translations[lang].solutions.soybeansArr[1]}
           position={isMedia1024 ? { left: 93, top: 4 } : { left: 320, top: 30 }}
           width={isMedia1024 ? 53 : 137}
           translate={
@@ -273,7 +264,7 @@ const Solutions = () => {
           }
         />
         <Info
-          list={soybeansArr[2]}
+          list={translations[lang].solutions.soybeansArr[2]}
           position={
             isMedia1024 ? { left: 170, top: -2 } : { left: 550, top: 6 }
           }
