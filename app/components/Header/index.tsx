@@ -54,12 +54,7 @@ const Header = () => {
             setIsSideBarOpen(false);
           }}
         >
-          <Image
-            src={logo}
-            alt="Eridon logo"
-            layout="responsive"
-            style={{ marginTop: 5 }}
-          />
+          <Image src={logo} alt="Eridon logo" style={{ marginTop: 5 }} />
         </Link>
         <SideBar />
       </nav>

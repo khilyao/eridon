@@ -25,7 +25,7 @@
   flex-direction: column;
   gap: 30px;
 
-  max-width: 200px;
+  max-width: 300px;
 }
 
 .legend {
@@ -35,7 +35,10 @@
 }
 
 .field {
-  // width: ;
+  padding: 10px 15px;
+
+  border: none;
+  border-radius: 6px;
 }
 
 .submitBtn {
@@ -61,4 +64,24 @@
   @media screen and (min-width: 1024px) {
     height: 40px;
   }
+}
+
+.adminWrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 250px;
+
+  transform: translate(-50%, -50%);
+}
+
+.adminField {
+  padding: 10px 15px;
+
+  border: none;
+  border-radius: 6px;
 }

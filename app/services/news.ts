@@ -5,7 +5,11 @@ axios.defaults.baseURL = `https://${process.env.NEXT_PUBLIC_MOCK_API_KEY}.mockap
 type Post = {
   photoName: string;
   link: string;
-  title: string;
+  title: {
+    ru: string;
+    en: string;
+    kz: string;
+  };
 };
 
 export const fetchAllNews = () => {

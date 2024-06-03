@@ -8,10 +8,14 @@ import { useState } from "react";
 import { addNewPost } from "@services/news";
 
 type Inputs = {
-  title: string;
   link: string;
   photoName: string;
   date: string;
+  title: {
+    ru: string;
+    en: string;
+    kz: string;
+  };
 };
 
 const Admin = () => {
@@ -23,6 +27,20 @@ const Admin = () => {
   } = useForm<Inputs>();
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const [message, setMessage] = useState<string>("");
+  const [password, setPassword] = useState("");
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+
+  const handlePasswordChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setPassword(e.target.value);
+  };
+
+  const handleLogin = () => {
+    if (password === process.env.NEXT_PUBLIC_ADMIN_PASSWORD) {
+      setIsAuthenticated(true);
+    } else {
+      alert("Incorrect password");
+    }
+  };
 
   const handleFileSelect = (file: File | null) => {
     setSelectedFile(file);
@@ -68,37 +86,90 @@ const Admin = () => {
     }
   };
 
+  if (isAuthenticated) {
+    return (
+      <>
+        <Header />
+        <main>
+          <section className={s.section}>
+            <div className={`container ${s.formWrapper}`}>
+              <h3 className={s.title}>Новости</h3>
+              <form className={s.form} onSubmit={handleSubmit(onSubmit)}>
+                <div className={s.legend}>
+                  <label htmlFor="titleRu">Оглавление (Ru)</label>
+                  <input
+                    className={s.field}
+                    id="titleRu"
+                    placeholder="Веселая ферма 2"
+                    {...register("title.ru", { required: true })}
+                  />
+                </div>
+                <div className={s.legend}>
+                  <label htmlFor="titleEn">Оглавление (En)</label>
+                  <input
+                    className={s.field}
+                    id="titleEn"
+                    placeholder="Farm Frenzy 2"
+                    {...register("title.en", { required: true })}
+                  />
+                </div>
+                <div className={s.legend}>
+                  <label htmlFor="titleKz">Оглавление (Kz)</label>
+                  <input
+                    className={s.field}
+                    id="titleKz"
+                    placeholder="Фермерлік ашуланшақ 2"
+                    {...register("title.kz", { required: true })}
+                  />
+                </div>
+                <div className={s.legend}>
+                  <label htmlFor="link">Ссылка</label>
+                  <input
+                    className={s.field}
+                    id="link"
+                    placeholder="https://google.com"
+                    {...register("link", { required: true })}
+                  />
+                </div>
+                <FileUpload onFileSelect={handleFileSelect} />
+                {errors.photoName && <p>{errors.photoName.message}</p>}
+                <button className={s.submitBtn} type="submit">
+                  Отправить
+                </button>
+                <p>{message}</p>
+              </form>
+            </div>
+          </section>
+        </main>
+      </>
+    );
+  }
+
   return (
     <>
       <Header />
       <main>
         <section className={s.section}>
           <div className={`container ${s.formWrapper}`}>
-            <h3 className={s.title}>Новости</h3>
-            <form className={s.form} onSubmit={handleSubmit(onSubmit)}>
-              <div className={s.legend}>
-                <label htmlFor="title">Оглавление</label>
-                <input
-                  className={s.field}
-                  id="title"
-                  {...register("title", { required: true })}
-                />
-              </div>
-              <div className={s.legend}>
-                <label htmlFor="link">Ссылка</label>
-                <input
-                  className={s.field}
-                  id="link"
-                  {...register("link", { required: true })}
-                />
-              </div>
-              <FileUpload onFileSelect={handleFileSelect} />
-              {errors.photoName && <p>{errors.photoName.message}</p>}
-              <button className={s.submitBtn} type="submit">
-                Отправить
+            <div className={s.adminWrapper}>
+              <h3 style={{ marginBottom: "20px" }}>
+                Введите пароль для админ-панели
+              </h3>
+              <input
+                className={s.adminField}
+                type="password"
+                value={password}
+                onChange={handlePasswordChange}
+                placeholder="Enter password"
+              />
+              <button
+                style={{ fontSize: 14 }}
+                className={s.submitBtn}
+                onClick={handleLogin}
+              >
+                Войти
               </button>
-              <p>{message}</p>
-            </form>
+            </div>
           </div>
         </section>
       </main>
