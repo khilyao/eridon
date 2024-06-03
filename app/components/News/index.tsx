@@ -99,7 +99,6 @@ const News = () => {
                         <div className={s.bottomBlock}>
                           <span className={s.date}>{date}</span>
                           <button className={s.details}>
-                            {" "}
                             {translations[lang].news.details}
                           </button>
                         </div>

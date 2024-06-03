@@ -21,7 +21,7 @@
       "secondWay": "Wholesale of fertilizers",
       "thirdWay": "Wholesale of seeds",
       "fourthWay": "Agrotechnological expertise and consulting services",
-      "directorName": "Vadim Krolevec",
+      "directorName": "Vadim Krolevets",
       "position": "Director of Eridon Kazakhstan",
       "missionTitle": "Mission",
       "missionText1": "We contribute to the development of Kazakhstan's agricultural potential by providing technologies for achieving maximum yield and quality of agricultural crops.",
@@ -181,43 +181,43 @@
     },
     "contacts": {
       "heading": "Contacts",
-      "mobile": "mob",
+      "mobile": "mob. ",
       "centralOffice": {
         "title": "Central Office:",
-        "address": "Republic of Kazakhstan, 010000, Astana city",
-        "street": "Beibitshilik St. 14, 11th floor"
+        "address": "Astana city, ",
+        "street": "Beibitshilik St. 14, 11th floor,"
       },
       "regionalOffices": {
         "title": "Regional Offices:",
         "locations": [
           {
-            "region": "Akmola region, Kokshetau city",
-            "address": "Suleimenova St. 23/2A, Offices #6, 12"
+            "region": "Akmola region, Kokshetau city, ",
+            "address": "Suleimenova St. 23/2A, Offices №6, 12,"
           },
           {
-            "region": "East Kazakhstan region, Ust-Kamenogorsk city",
-            "address": "Abay Ave. 189, Building 2, 2nd floor"
+            "region": "East Kazakhstan region, Ust-Kamenogorsk city, ",
+            "address": "Abay Ave. 189, Building 2, 2nd floor,"
           },
           {
-            "region": "Pavlodar region, Pavlodar city",
-            "address": "Lugovaya St. 16, Office #212"
+            "region": "Pavlodar region, Pavlodar city, ",
+            "address": "Lugovaya St. 16, Office #212,"
           },
           {
-            "region": "North Kazakhstan region, Petropavlovsk city",
-            "address": "Auezova St. 264B, Office 7"
+            "region": "North Kazakhstan region, Petropavlovsk city, ",
+            "address": "Auezova St. 264B, Office 7,"
           },
           {
-            "region": "vil. Novoishimskoe"
+            "region": "vil. Novoishimskoe, "
           },
           {
-            "region": "Kostanay region, Kostanay city",
-            "address": "Karbyesheva St. 24B, 3rd floor"
+            "region": "Kostanay region, Kostanay city, ",
+            "address": "Karbyesheva St. 24B, 3rd floor,"
           },
           {
-            "region": "Abay region, Semey city"
+            "region": "Abay region, Semey city, "
           },
           {
-            "region": "Karaganda region, Karaganda city"
+            "region": "Karaganda region, Karaganda city, "
           }
         ]
       }
@@ -403,43 +403,43 @@
     },
     "contacts": {
       "heading": "Контакты",
-      "mobile": "моб",
+      "mobile": "моб. ",
       "centralOffice": {
         "title": "Центральный Офис:",
-        "address": "Республика Казахстан, 010000, г. Астана",
-        "street": "ул. Бейбитшилик 14, 11 этаж"
+        "address": "г. Астана, ",
+        "street": "ул. Бейбитшилик 14, 11 этаж,"
       },
       "regionalOffices": {
         "title": "Региональные офисы:",
         "locations": [
           {
-            "region": "Акмолинская область, г. Кокшетау",
-            "address": "ул. Сулейменова 23/2А, офисы №6, 12"
+            "region": "Акмолинская область, г. Кокшетау, ",
+            "address": "ул. Сулейменова 23/2А, офисы №6, 12,"
           },
           {
-            "region": "Восточно-Казахстанская область, г. Усть-Каменогорск",
-            "address": "пр. Абая 189, строение 2, 2 этаж"
+            "region": "Восточно-Казахстанская область, г. Усть-Каменогорск, ",
+            "address": "пр. Абая 189, строение 2, 2 этаж, "
           },
           {
-            "region": "Павлодарская область, г. Павлодар",
-            "address": "ул. Луговая 16, офис №212"
+            "region": "Павлодарская область, г. Павлодар, ",
+            "address": "ул. Луговая 16, офис №212,"
           },
           {
-            "region": "Северо-Казахстанская область, г. Петропавловск",
-            "address": "ул. Ауэзова 264Б, офис 7"
+            "region": "Северо-Казахстанская область, г. Петропавловск, ",
+            "address": "ул. Ауэзова 264Б, офис 7,"
           },
           {
-            "region": "с. Новоишимское"
+            "region": "с. Новоишимское,"
           },
           {
-            "region": "Костанайская область, г. Костанай",
-            "address": "ул. Карбышева 24Б, 3 этаж"
+            "region": "Костанайская область, г. Костанай, ",
+            "address": "ул. Карбышева 24Б, 3 этаж,"
           },
           {
-            "region": "Область Абай, г. Семей"
+            "region": "Область Абай, г. Семей,"
           },
           {
-            "region": "Карагандинская область, г. Караганда"
+            "region": "Карагандинская область, г. Караганда,"
           }
         ]
       }
@@ -478,7 +478,7 @@
       "directorName": "Вадим Кролевец",
       "position": "Эридон Қазақстан директоры",
       "missionTitle": "Миссия",
-      "missionText1": "Біз Қазақстанның аграрлық әлеуетінің дамуына ықпал етеміз, ауыл шаруашылығы дақылдарының максималды өнімділігі мен сапасын қамтамасыз ету үшін өсіру технологияларын ұсынамыз.",
+      "missionText1": "Біз Қазақстанның ауыл шаруашылығы әлеуетін дамытуға үлес қосамыз, ауыл шаруашылығы дақылдарының барынша өнімділігі мен сапасы үшін өсіру технологияларын ұсынамыз.",
       "missionText2": "Біз Қазақстанның барлық ауыл шаруашылығы өндірушілері үшін сенімді серіктеспіз.",
       "goalTitle": "Мақсат",
       "goalText1": "Қазақстанның аграрлық өндірушілерін кешенді қамтамасыз ету нарығында көшбасшы болу.",
@@ -632,43 +632,43 @@
     },
     "contacts": {
       "heading": "Контактілер",
-      "mobile": "моб",
+      "mobile": "моб. ",
       "centralOffice": {
         "title": "Негізгі Офис:",
-        "address": "Қазақстан Республикасы, 010000, Астана қаласы",
-        "street": "Бейбітшілік көшесі 14, 11-ші көшесі"
+        "address": "Астана қаласы, ",
+        "street": "Бейбітшілік көшесі 14, 11-ші көшесі,"
       },
       "regionalOffices": {
         "title": "Аудандық офистер:",
         "locations": [
           {
-            "region": "Ақмола облысы, Көкшетау қаласы",
-            "address": "Сулейменова көшесі 23/2А, офис #6, 12"
+            "region": "Ақмола облысы, Көкшетау қаласы, ",
+            "address": "Сулейменова көшесі 23/2А, офис №6, 12,"
           },
           {
-            "region": "Шығыс Қазақстан облысы, Өскемен қаласы",
-            "address": "Абай алғасы 189, үй 2, 2-ші этаж"
+            "region": "Шығыс Қазақстан облысы, Өскемен қаласы, ",
+            "address": "Абай алғасы 189, үй 2, 2-ші этаж,"
           },
           {
-            "region": "Павлодар облысы, Павлодар қаласы",
-            "address": "Луговая көшесі 16, офис №212"
+            "region": "Павлодар облысы, Павлодар қаласы, ",
+            "address": "Луговая көшесі 16, офис №212,"
           },
           {
-            "region": "Солтүстік Қазақстан облысы, Петропавл қаласы",
-            "address": "Ауэзов көшесі 264Б, офис 7"
+            "region": "Солтүстік Қазақстан облысы, Петропавл қаласы, ",
+            "address": "Ауэзов көшесі 264Б, офис 7,"
           },
           {
-            "region": "Ш. Новоишимское ауылы"
+            "region": "Ш. Новоишимское ауыл,"
           },
           {
-            "region": "Қостанай облысы, Қостанай қаласы",
-            "address": "Карбышева көшесі 24Б, 3-ші этаж"
+            "region": "Қостанай облысы, Қостанай қаласы, ",
+            "address": "Карбышева көшесі 24Б, 3-ші этаж,"
           },
           {
-            "region": "Абай аудандық бөлімі, Семей қаласы"
+            "region": "Абай аудандық бөлімі, Семей қалас,"
           },
           {
-            "region": "Қарағанды облысы, Қарағанды қаласы"
+            "region": "Қарағанды облысы, Қарағанды қалас,"
           }
         ]
       }
