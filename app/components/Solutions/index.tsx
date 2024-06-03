@@ -237,7 +237,7 @@ const Solutions = () => {
         <Info
           list={translations[lang].solutions.rapeArr[2]}
           position={
-            isMedia1024 ? { left: 290, top: 0 } : { left: 970, top: 20 }
+            isMedia1024 ? { left: 290, top: 0 } : { left: 955, top: 20 }
           }
           width={isMedia1024 ? 48 : 130}
           translate={

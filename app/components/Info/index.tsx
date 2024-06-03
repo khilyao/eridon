@@ -19,7 +19,7 @@ const Info = ({ list, position, translate, width = "auto" }: Props) => {
 
   const transform = isOpen
     ? `${translate} scale(1)`
-    : `${translate} scale(0.5)`;
+    : `${translate} scale(1.15)`;
 
   const inlineStyles = {
     ...position,
