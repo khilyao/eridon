@@ -4,9 +4,11 @@ import Image from "next/image";
 import logo from "@assets/logo.png";
 import s from "./footer.module.scss";
 import { useMediaQuery } from "@/hooks/useMediaQuery";
+import { useLang } from "@/hooks/useLang";
 
 const Footer = () => {
   const isMedia1024 = useMediaQuery(1024);
+  const { lang, translations } = useLang();
 
   return (
     <footer className={s.footer}>
@@ -18,22 +20,22 @@ const Footer = () => {
           <ul className={s.list}>
             <li className={s.item}>
               <Link className={s.link} href="#about">
-                О компании
+                {translations[lang].footer.company}
               </Link>
             </li>
             <li className={s.item}>
               <Link className={s.link} href="#solutions">
-                Готовые решения
+                {translations[lang].footer.solution}
               </Link>
             </li>
             <li className={s.item}>
               <Link className={s.link} href="#news">
-                Новости
+                {translations[lang].footer.news}
               </Link>
             </li>
             <li className={s.item}>
               <Link className={s.link} href="#contacts">
-                Контакты
+                {translations[lang].footer.contact}
               </Link>
             </li>
           </ul>
@@ -42,8 +44,8 @@ const Footer = () => {
       {isMedia1024 && <div className={s.mobileLine}></div>}
       <div className="container">
         <div className={s.bottomBlock}>
-          <span>Эридон Казахстан 2024</span>
-          <span>Вы принимаете &quot;политику конфиденциальности&quot;</span>
+          <span>{translations[lang].footer.dateOfBirth}</span>
+          <span>{translations[lang].footer.policy}</span>
         </div>
       </div>
     </footer>

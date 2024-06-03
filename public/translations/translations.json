@@ -1,5 +1,323 @@
 {
-  "en": {},
-  "ru": {},
-  "kz": {}
+  "en": {
+    "header": {
+      "company": "About company",
+      "solution": "Solutions",
+      "news": "News",
+      "contact": "Contacts",
+      "help": "Agroconsultation"
+    },
+    "hero": {
+      "title": "Collaboration that guarantees success"
+    },
+    "aboutCompany": {
+      "sectionTitle": "About Company",
+      "city": "Eridon Kazakhstan",
+      "registrationDate": "Registration date - November 2019",
+      "text": "\"Eridon Kazakhstan\" is part of the \"Eridon Ukraine\" Group of Companies",
+      "subText": "The \"Eridon\" Group of Companies has a 30-year history of operations in Ukraine, with the last 15 years being the number one company in the plant protection products market",
+      "listHeading": "Main areas of activity:",
+      "firstWay": "Wholesale of pesticides and agrochemical products",
+      "secondWay": "Wholesale of fertilizers",
+      "thirdWay": "Wholesale of seeds",
+      "fourthWay": "Agrotechnological expertise and consulting services",
+      "directorName": "Vadim Krolevec",
+      "position": "Director of Eridon Kazakhstan",
+      "missionTitle": "Mission",
+      "missionText1": "We contribute to the development of Kazakhstan's agricultural potential by providing technologies for achieving maximum yield and quality of agricultural crops.",
+      "missionText2": "We are a reliable partner for all agricultural producers in Kazakhstan.",
+      "goalTitle": "Goal",
+      "goalText1": "To become a leader in the comprehensive supply of agricultural producers in Kazakhstan.",
+      "goalText2": "To move forward on the path of continuous improvement and innovation.",
+      "valuesTitle": "Our Values",
+      "clients": "Our Clients",
+      "team": "Our Team",
+      "quality": "Quality",
+      "innovation": "Innovation",
+      "professionalism": "Professionalism"
+    },
+    "solutions": {
+      "title": "Ready-made solutions"
+    },
+    "agroconsulting": {
+      "title": "Agroconsultation",
+      "request": "Request for agro-consultation",
+      "namePlaceholder": "Name",
+      "companyPlaceholder": "Company",
+      "positionPlaceHolder": "Position",
+      "phonePlaceholder": "Phone",
+      "placePlaceholder": "Location",
+      "squarePlaceholder": "Area",
+      "culturePlaceholder": "Crop",
+      "submit": "Submit"
+    },
+    "news": {
+      "title": "News"
+    },
+    "contacts": {
+      "heading": "Contacts",
+      "mobile": "mob",
+      "centralOffice": {
+        "title": "Central Office:",
+        "address": "Republic of Kazakhstan, 010000, Astana city",
+        "street": "Beibitshilik St. 14, 11th floor"
+      },
+      "regionalOffices": {
+        "title": "Regional Offices:",
+        "locations": [
+          {
+            "region": "Akmola region, Kokshetau city",
+            "address": "Suleimenova St. 23/2A, Offices #6, 12"
+          },
+          {
+            "region": "East Kazakhstan region, Ust-Kamenogorsk city",
+            "address": "Abay Ave. 189, Building 2, 2nd floor"
+          },
+          {
+            "region": "Pavlodar region, Pavlodar city",
+            "address": "Lugovaya St. 16, Office #212"
+          },
+          {
+            "region": "North Kazakhstan region, Petropavlovsk city",
+            "address": "Auezova St. 264B, Office 7"
+          },
+          {
+            "region": "vil. Novoishimskoe"
+          },
+          {
+            "region": "Kostanay region, Kostanay city",
+            "address": "Karbyesheva St. 24B, 3rd floor"
+          },
+          {
+            "region": "Abay region, Semey city"
+          },
+          {
+            "region": "Karaganda region, Karaganda city"
+          }
+        ]
+      }
+    },
+    "footer": {
+      "company": "About company",
+      "solution": "Solutions",
+      "news": "News",
+      "contact": "Contacts",
+      "dateOfBirth": "Eridon Kazakhstan 2024",
+      "policy": "You accept the \"privacy policy\""
+    }
+  },
+  "ru": {
+    "header": {
+      "company": "О компании",
+      "solution": "Готовые решения",
+      "news": "Новости",
+      "contact": "Контакты",
+      "help": "Агроконсультация"
+    },
+    "hero": {
+      "title": "Сотрудничество, которое гарантирует успех"
+    },
+    "aboutCompany": {
+      "sectionTitle": "О компании",
+      "city": "Эридон Казахстан",
+      "registrationDate": "Дата регистрации - ноябрь 2019г.",
+      "text": "\"Эридон Казахстан\" входит в группу Компаний \"Эридон Украина\"",
+      "subText": "Группа Компаний «Эридон» имеет 30-летнюю историю работы в Украине, из них последние 15 лет - в статусе компании номер один на рынке средств защиты растений",
+      "listHeading": "Основные направления деятельности:",
+      "firstWay": "Оптовая торговля пестицидами и агрохимическими продуктами",
+      "secondWay": "Оптовая торговля удобрениями",
+      "thirdWay": "Оптовая торговля семенами",
+      "fourthWay": "Услуги по агротехнологической экспертизе и консультации",
+      "directorName": "Вадим Кролевец",
+      "position": "Директор Эридон Казахстан",
+      "missionTitle": "Миссия",
+      "missionText1": "Мы способствуем развитию аграрного потенциала Казахстана, обеспечивая технологии выращивания для получения максимальной урожайности и качества сельскохозяйственных культур.",
+      "missionText2": "Мы являемся надежным партнером для всех сельскохозяйственных производителей Казахстана.",
+      "goalTitle": "Цель",
+      "goalText1": "Стать лидером на рынке комплексного обеспечения аграрных производителей Казахстана.",
+      "goalText2": "Идти вперед по пути постоянного совершенствования и инноваций.",
+      "valuesTitle": "Наши ценности",
+      "clients": "Наши клиенты",
+      "team": "Наша команда",
+      "quality": "Качество",
+      "innovation": "Инновации",
+      "professionalism": "Профессионализм"
+    },
+    "solutions": {
+      "title": "Готовые решения"
+    },
+    "agroconsulting": {
+      "title": "Агроконсультация",
+      "request": "Заявка на агроконсультацию",
+      "namePlaceholder": "Имя",
+      "companyPlaceholder": "Компания",
+      "positionPlaceHolder": "Должность",
+      "phonePlaceholder": "Телефон",
+      "placePlaceholder": "Место нахождения",
+      "squarePlaceholder": "Площадь",
+      "culturePlaceholder": "Культура",
+      "submit": "Отправить"
+    },
+    "news": {
+      "title": "Новости"
+    },
+    "contacts": {
+      "heading": "Контакты",
+      "mobile": "моб",
+      "centralOffice": {
+        "title": "Центральный Офис:",
+        "address": "Республика Казахстан, 010000, г. Астана",
+        "street": "ул. Бейбитшилик 14, 11 этаж"
+      },
+      "regionalOffices": {
+        "title": "Региональные офисы:",
+        "locations": [
+          {
+            "region": "Акмолинская область, г. Кокшетау",
+            "address": "ул. Сулейменова 23/2А, офисы №6, 12"
+          },
+          {
+            "region": "Восточно-Казахстанская область, г. Усть-Каменогорск",
+            "address": "пр. Абая 189, строение 2, 2 этаж"
+          },
+          {
+            "region": "Павлодарская область, г. Павлодар",
+            "address": "ул. Луговая 16, офис №212"
+          },
+          {
+            "region": "Северо-Казахстанская область, г. Петропавловск",
+            "address": "ул. Ауэзова 264Б, офис 7"
+          },
+          {
+            "region": "с. Новоишимское"
+          },
+          {
+            "region": "Костанайская область, г. Костанай",
+            "address": "ул. Карбышева 24Б, 3 этаж"
+          },
+          {
+            "region": "Область Абай, г. Семей"
+          },
+          {
+            "region": "Карагандинская область, г. Караганда"
+          }
+        ]
+      }
+    },
+    "footer": {
+      "company": "О компании",
+      "solution": "Готовые решения",
+      "news": "Новости",
+      "contact": "Контакты",
+      "dateOfBirth": "Эридон Казахстан 2024",
+      "policy": ""
+    }
+  },
+  "kz": {
+    "header": {
+      "company": "Компания жайлы",
+      "solution": "Дайын шешімдер",
+      "news": "Жаңалықтар",
+      "contact": "Контактілер",
+      "help": "Агроконсультация"
+    },
+    "hero": {
+      "title": "Табысқа кепілдік беретін ынтымақтастық"
+    },
+    "aboutCompany": {
+      "sectionTitle": "Компания жайлы",
+      "city": "Эридон Қазақстан",
+      "registrationDate": "Тіркелу күні - 2019 жылдың қарашасы",
+      "text": "\"Эридон Қазақстан\" \"Эридон Украина\" Компаниялар тобының құрамына кіреді",
+      "subText": "\"Эридон\" Компаниялар тобының Украинада 30 жылдық жұмыс тарихы бар, соңғы 15 жыл ішінде өсімдіктерді қорғау құралдары нарығында бірінші орында болды",
+      "listHeading": "Негізгі қызмет бағыттары:",
+      "firstWay": "Пестицидтер мен агрохимиялық өнімдердің көтерме саудасы",
+      "secondWay": "Тыңайтқыштардың көтерме саудасы",
+      "thirdWay": "Тұқымдардың көтерме саудасы",
+      "fourthWay": "Агротехнологиялық сараптама және кеңес беру қызметтері",
+      "directorName": "Вадим Кролевец",
+      "position": "Эридон Қазақстан директоры",
+      "missionTitle": "Миссия",
+      "missionText1": "Біз Қазақстанның аграрлық әлеуетінің дамуына ықпал етеміз, ауыл шаруашылығы дақылдарының максималды өнімділігі мен сапасын қамтамасыз ету үшін өсіру технологияларын ұсынамыз.",
+      "missionText2": "Біз Қазақстанның барлық ауыл шаруашылығы өндірушілері үшін сенімді серіктеспіз.",
+      "goalTitle": "Мақсат",
+      "goalText1": "Қазақстанның аграрлық өндірушілерін кешенді қамтамасыз ету нарығында көшбасшы болу.",
+      "goalText2": "Үнемі жетілдіру мен инновациялар жолында алға жылжу.",
+      "valuesTitle": "Біздің құндылықтарымыз",
+      "clients": "Біздің клиенттеріміз",
+      "team": "Біздің команда",
+      "quality": "Сапа",
+      "innovation": "Инновациялар",
+      "professionalism": "Кәсібилік"
+    },
+    "solutions": {
+      "title": "Дайын шешімдер"
+    },
+    "agroconsulting": {
+      "title": "Агроконсультация",
+      "request": "Ауылшаруашылық кеңесіне өтініш",
+      "namePlaceholder": "Аты",
+      "companyPlaceholder": "Компания",
+      "positionPlaceHolder": "Қызмет атауы",
+      "phonePlaceholder": "Телефон",
+      "placePlaceholder": "Орналасу орны",
+      "squarePlaceholder": "Алаң",
+      "culturePlaceholder": "Несім",
+      "submit": "Жіберу"
+    },
+    "news": {
+      "title": "Жаңалықтар"
+    },
+    "contacts": {
+      "heading": "Контактілер",
+      "mobile": "моб",
+      "centralOffice": {
+        "title": "Негізгі Офис:",
+        "address": "Қазақстан Республикасы, 010000, Астана қаласы",
+        "street": "Бейбітшілік көшесі 14, 11-ші көшесі"
+      },
+      "regionalOffices": {
+        "title": "Аудандық офистер:",
+        "locations": [
+          {
+            "region": "Ақмола облысы, Көкшетау қаласы",
+            "address": "Сулейменова көшесі 23/2А, офис #6, 12"
+          },
+          {
+            "region": "Шығыс Қазақстан облысы, Өскемен қаласы",
+            "address": "Абай алғасы 189, үй 2, 2-ші этаж"
+          },
+          {
+            "region": "Павлодар облысы, Павлодар қаласы",
+            "address": "Луговая көшесі 16, офис №212"
+          },
+          {
+            "region": "Солтүстік Қазақстан облысы, Петропавл қаласы",
+            "address": "Ауэзов көшесі 264Б, офис 7"
+          },
+          {
+            "region": "Ш. Новоишимское ауылы"
+          },
+          {
+            "region": "Қостанай облысы, Қостанай қаласы",
+            "address": "Карбышева көшесі 24Б, 3-ші этаж"
+          },
+          {
+            "region": "Абай аудандық бөлімі, Семей қаласы"
+          },
+          {
+            "region": "Қарағанды облысы, Қарағанды қаласы"
+          }
+        ]
+      }
+    },
+    "footer": {
+      "company": "Компания жайлы",
+      "solution": "Дайын шешімдер",
+      "news": "Жаңалықтар",
+      "contact": "Контактілер",
+      "dateOfBirth": "Эридон Қазақстан 2024",
+      "policy": "Сіз \"құпиялылық саясатын\" қабылдайсыз"
+    }
+  }
 }

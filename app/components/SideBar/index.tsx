@@ -1,15 +1,30 @@
+"use client";
 import Link from "next/link";
 import s from "./sideBar.module.scss";
 import { storeContext } from "@context/context";
 import { useContext, useEffect } from "react";
 import { useMediaQuery } from "@/hooks/useMediaQuery";
 import { useScrollWithOffset } from "@/hooks/useScrollWithOffset";
+import { useLang } from "@/hooks/useLang";
+import { AllowedLangs } from "@/constants/lang";
+import { setLang } from "@/app/context/lang";
 
 const SideBar = () => {
   const { isSideBarOpen, setIsSideBarOpen } = useContext(storeContext);
   const isMedia1024 = useMediaQuery(1024);
   const offset = isMedia1024 ? 70 : 140;
   const handleScrollWithOffset = useScrollWithOffset(offset);
+  const { lang, translations } = useLang();
+
+  const handleSwitchLang = (lang: string) => {
+    setLang(lang as AllowedLangs);
+    localStorage.setItem("lang", JSON.stringify(lang));
+  };
+
+  const handleChangeLang = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    const selectedLang = event.target.value;
+    handleSwitchLang(selectedLang);
+  };
 
   useEffect(() => {
     const bodyRef = document.body;
@@ -54,7 +69,7 @@ const SideBar = () => {
               setIsSideBarOpen(false);
             }}
           >
-            О компании
+            {translations[lang].header.company}
           </Link>
         </li>
         <li>
@@ -66,7 +81,7 @@ const SideBar = () => {
               setIsSideBarOpen(false);
             }}
           >
-            Готовые решения
+            {translations[lang].header.solution}
           </Link>
         </li>
         <li>
@@ -78,7 +93,7 @@ const SideBar = () => {
               setIsSideBarOpen(false);
             }}
           >
-            Новости
+            {translations[lang].header.news}
           </Link>
         </li>
         <li>
@@ -90,7 +105,7 @@ const SideBar = () => {
               setIsSideBarOpen(false);
             }}
           >
-            Контакты
+            {translations[lang].header.contact}
           </Link>
         </li>
       </ul>
@@ -102,11 +117,17 @@ const SideBar = () => {
           setIsSideBarOpen(false);
         }}
       >
-        Агроконсультация
+        {translations[lang].header.help}
       </Link>
-      <select className={s.langPicker} name="lang-picker" id="lang-picker">
+      <select
+        className={s.langPicker}
+        name="lang-picker"
+        id="lang-picker"
+        onChange={handleChangeLang}
+        value={lang}
+      >
         <option value="ru">Рус</option>
-        <option value="eng">Eng</option>
+        <option value="en">Eng</option>
         <option value="kz">ҚЗ</option>
       </select>
     </aside>

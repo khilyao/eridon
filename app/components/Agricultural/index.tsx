@@ -4,6 +4,7 @@ import { useForm, SubmitHandler } from "react-hook-form";
 import formImg from "@assets/formImg.png";
 import { useMediaQuery } from "@/hooks/useMediaQuery";
 import { useState } from "react";
+import { useLang } from "@/hooks/useLang";
 
 type Inputs = {
   name: string;
@@ -25,6 +26,7 @@ const Agricultural = () => {
   } = useForm<Inputs>();
   const isMedia1024 = useMediaQuery(1024);
   const [isLoading, setIsLoading] = useState<boolean>(false);
+  const { lang, translations } = useLang();
 
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
     const formData = new FormData();
@@ -56,16 +58,20 @@ const Agricultural = () => {
   return (
     <section id="agricultural" className={s.block}>
       <div className={`${s.containerWrapper} container`}>
-        <h2 className={s.title}>Агроконсультация</h2>
+        <h2 className={s.title}>{translations[lang].agroconsulting.title}</h2>
         <div className={s.backdoor}>
           {isMedia1024 && (
-            <h3 className={s.subTitle}>Заявка на агроконсультацию</h3>
+            <h3 className={s.subTitle}>
+              {translations[lang].agroconsulting.request}
+            </h3>
           )}
           <div className={s.formWrapper}>
             <Image src={formImg} className={s.formImg} alt="loop" />
             <form className={s.form} onSubmit={handleSubmit(onSubmit)}>
               {!isMedia1024 && (
-                <h3 className={s.subTitle}>Заявка на агроконсультацию</h3>
+                <h3 className={s.subTitle}>
+                  {translations[lang].agroconsulting.request}
+                </h3>
               )}
 
               <div
@@ -78,28 +84,36 @@ const Agricultural = () => {
                   style={errors.name && { border: "2px solid #fc7c7c" }}
                   type="text"
                   className={s.field}
-                  placeholder="ФИО"
+                  placeholder={
+                    translations[lang].agroconsulting.namePlaceholder
+                  }
                   {...register("name", { required: true })}
                 />
                 <input
                   style={errors.company && { border: "2px solid #fc7c7c" }}
                   type="text"
                   className={s.field}
-                  placeholder="Компания"
+                  placeholder={
+                    translations[lang].agroconsulting.companyPlaceholder
+                  }
                   {...register("company", { required: true })}
                 />
                 <input
                   style={errors.position && { border: "2px solid #fc7c7c" }}
                   type="text"
                   className={s.field}
-                  placeholder="Должность"
+                  placeholder={
+                    translations[lang].agroconsulting.positionPlaceHolder
+                  }
                   {...register("position", { required: true })}
                 />
                 <input
                   style={errors.phone && { border: "2px solid #fc7c7c" }}
                   type="tel"
                   className={s.field}
-                  placeholder="Телефон"
+                  placeholder={
+                    translations[lang].agroconsulting.phonePlaceholder
+                  }
                   {...register("phone", { required: true })}
                 />
                 <input
@@ -113,26 +127,32 @@ const Agricultural = () => {
                   style={errors.place && { border: "2px solid #fc7c7c" }}
                   type="text"
                   className={s.field}
-                  placeholder="Место нахождения"
+                  placeholder={
+                    translations[lang].agroconsulting.placePlaceholder
+                  }
                   {...register("place", { required: true })}
                 />
                 <input
                   style={errors.square && { border: "2px solid #fc7c7c" }}
                   type="text"
                   className={s.field}
-                  placeholder="Площадь, га"
+                  placeholder={
+                    translations[lang].agroconsulting.squarePlaceholder
+                  }
                   {...register("square", { required: true })}
                 />
                 <input
                   style={errors.culture && { border: "2px solid #fc7c7c" }}
                   type="text"
                   className={s.field}
-                  placeholder="Культура"
+                  placeholder={
+                    translations[lang].agroconsulting.culturePlaceholder
+                  }
                   {...register("culture", { required: true })}
                 />
               </div>
               <button className={s.submitBtn} type="submit">
-                Отправить
+                {translations[lang].agroconsulting.submit}
               </button>
             </form>
           </div>

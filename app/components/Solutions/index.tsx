@@ -18,9 +18,11 @@ import {
 } from "@/db/solutions";
 import { useMediaQuery } from "@/hooks/useMediaQuery";
 import Info from "@components/Info";
+import { useLang } from "@/hooks/useLang";
 
 const Solutions = () => {
   const isMedia1024 = useMediaQuery(1024);
+  const { lang, translations } = useLang();
 
   const grid = (
     <>
@@ -287,7 +289,7 @@ const Solutions = () => {
   return (
     <section id="solutions" className={s.solutionParent}>
       <div className={`container ${s.containerWrapper}`}>
-        <h2 className={s.mainTitle}>Готовые решения</h2>
+        <h2 className={s.mainTitle}>{translations[lang].solutions.title}</h2>
         <div className={s.grid}>{grid}</div>
       </div>
     </section>

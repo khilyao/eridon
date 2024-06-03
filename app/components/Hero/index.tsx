@@ -1,9 +1,11 @@
 import s from "./hero.module.scss";
 import { useContext } from "react";
 import { storeContext } from "@context/context";
+import { useLang } from "@/hooks/useLang";
 
 const Hero = () => {
   const { isSideBarOpen } = useContext(storeContext);
+  const { lang, translations } = useLang();
 
   return (
     <div className={s.heroBg}>
@@ -14,7 +16,7 @@ const Hero = () => {
           background: isSideBarOpen ? "transparent" : "",
         }}
       >
-        <h1 className={s.title}>Сотрудничество, которое гарантирует успех</h1>
+        <h1 className={s.title}>{translations[lang].hero.title}</h1>
       </div>
     </div>
   );

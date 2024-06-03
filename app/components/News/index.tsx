@@ -8,11 +8,13 @@ import { useEffect, useState } from "react";
 import { useMediaQuery } from "@/hooks/useMediaQuery";
 import ArrowLeft from "@assets/arrowLeft.svg";
 import ArrowRight from "@assets/arrowRight.svg";
+import { useLang } from "@/hooks/useLang";
 
 const News = () => {
   const [news, setNews] = useState([]);
   const isMedia1024 = useMediaQuery(1024);
   const [swiper, setSwiper] = useState<SwiperClass | null>(null); // Define the type for swiper
+  const { lang, translations } = useLang();
 
   useEffect(() => {
     fetchAllNews()
@@ -42,7 +44,7 @@ const News = () => {
   return (
     <section id="news" className={s.newsBlock}>
       <div className="container">
-        <h2 className={s.title}>Новости</h2>
+        <h2 className={s.title}>{translations[lang].news.title}</h2>
         {isMedia1024 ? (
           <ul className={s.list}>
             {news.map(({ date, id, title, link, photoName }) => (
