@@ -1,6 +1,6 @@
 import s from "./hero.module.scss";
 import { useContext } from "react";
-import { storeContext } from "@/app/context/context";
+import { storeContext } from "@context/context";
 
 const Hero = () => {
   const { isSideBarOpen } = useContext(storeContext);

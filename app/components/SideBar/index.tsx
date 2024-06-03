@@ -1,6 +1,6 @@
 import Link from "next/link";
 import s from "./sideBar.module.scss";
-import { storeContext } from "../../context/context";
+import { storeContext } from "@context/context";
 import { useContext, useEffect } from "react";
 import { useMediaQuery } from "@/hooks/useMediaQuery";
 import { useScrollWithOffset } from "@/hooks/useScrollWithOffset";

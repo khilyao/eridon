@@ -22,7 +22,7 @@
       "@components/*": ["./app/components/*"],
       "@globalStyles/*": ["./globalStyles/*"],
       "@assets/*": ["./assets/*"],
-      "@context/*": ["./context/*"],
+      "@context/*": ["./app/context/*"],
       "@db/*": ["./db/*"],
       "@services/*": ["./app/services/*"]
     }

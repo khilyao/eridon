@@ -4,23 +4,15 @@ import Link from "next/link";
 import s from "./header.module.scss";
 import { Fade as Hamburger } from "hamburger-react";
 import { useContext, useEffect, useState } from "react";
-import { storeContext } from "../../context/context";
-import SideBar from "../SideBar";
+import { storeContext } from "@context/context";
+import SideBar from "@components/SideBar";
 import logo from "@assets/logo.png";
 import { useMediaQuery } from "@/hooks/useMediaQuery";
 
 const Header = () => {
   const { isSideBarOpen, setIsSideBarOpen } = useContext(storeContext);
   const [scrollPosition, setScrollPosition] = useState(0);
-  const isMedia768 = useMediaQuery(768);
   const isMedia1024 = useMediaQuery(1024);
-  const isMedia1280 = useMediaQuery(1280);
-
-  const calculateLogoWidth = () => {
-    if (isMedia768) return 180;
-    if (isMedia1280 && !isMedia768) return 220;
-    return 330;
-  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -63,10 +55,10 @@ const Header = () => {
           }}
         >
           <Image
-            width={calculateLogoWidth()}
-            style={{ marginTop: 5 }}
             src={logo}
             alt="Eridon logo"
+            layout="responsive"
+            style={{ marginTop: 5 }}
           />
         </Link>
         <SideBar />

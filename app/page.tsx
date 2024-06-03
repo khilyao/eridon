@@ -6,6 +6,7 @@ import Solutions from "@components/Solutions";
 import Agricaltural from "@components/Agricultural";
 import News from "@components/News";
 import Contacts from "@components/Contacts";
+import Footer from "@components/Footer";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <Agricaltural />
         <News />
         <Contacts />
+        <Footer />
       </main>
     </>
   );
