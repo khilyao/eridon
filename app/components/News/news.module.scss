@@ -59,12 +59,12 @@
 }
 
 .cardBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 15px 15px;
+  min-height: 180px;
   background-color: #fff;
-
-  @media screen and (min-width: 400px) {
-    padding: 20px;
-  }
 }
 
 .cardTitle {
@@ -76,7 +76,7 @@
   color: rgb(156, 107, 1);
 
   @media screen and (min-width: 1024px) {
-    font-size: 20px;
+    font-size: 17px;
   }
 }
 
@@ -93,7 +93,7 @@
   color: #534319;
 
   @media screen and (min-width: 1024px) {
-    font-size: 17px;
+    font-size: 14px;
   }
 }
 
@@ -114,7 +114,7 @@
   @media screen and (min-width: 1024px) {
     padding: 10px 15px;
 
-    font-size: 18px;
+    font-size: 15px;
   }
 }
 
