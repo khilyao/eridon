@@ -177,7 +177,8 @@
     },
     "news": {
       "title": "News",
-      "details": "More details"
+      "details": "More details",
+      "loadMore": "More news"
     },
     "contacts": {
       "heading": "Contacts",
@@ -399,7 +400,8 @@
     },
     "news": {
       "title": "Новости",
-      "details": "Подробнее"
+      "details": "Подробнее",
+      "loadMore": "Еще новости"
     },
     "contacts": {
       "heading": "Контакты",
@@ -628,7 +630,8 @@
     },
     "news": {
       "title": "Жаңалықтар",
-      "details": "Қосымша мәліметтер"
+      "details": "Қосымша мәліметтер",
+      "loadMore": "Қосымша жаңалықтар"
     },
     "contacts": {
       "heading": "Контактілер",

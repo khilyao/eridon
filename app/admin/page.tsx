@@ -131,7 +131,10 @@ const Admin = () => {
                     {...register("link", { required: true })}
                   />
                 </div>
-                <FileUpload onFileSelect={handleFileSelect} />
+                <div>
+                  <span className={s.photoTip}>Фото для заставки</span>
+                  <FileUpload onFileSelect={handleFileSelect} />
+                </div>
                 {errors.photoName && <p>{errors.photoName.message}</p>}
                 <button className={s.submitBtn} type="submit">
                   Отправить

@@ -13,8 +13,13 @@ import { useLang } from "@/hooks/useLang";
 const News = () => {
   const [news, setNews] = useState([]);
   const isMedia1024 = useMediaQuery(1024);
-  const [swiper, setSwiper] = useState<SwiperClass | null>(null); // Define the type for swiper
+  const [visibleNews, setVisibleNews] = useState(3);
+  const [swiper, setSwiper] = useState<SwiperClass | null>(null);
   const { lang, translations } = useLang();
+
+  const handleLoadMore = () => {
+    setVisibleNews((prevCount) => Math.min(prevCount + 3, news.length));
+  };
 
   useEffect(() => {
     fetchAllNews()
@@ -46,30 +51,43 @@ const News = () => {
       <div className="container">
         <h2 className={s.title}>{translations[lang].news.title}</h2>
         {isMedia1024 ? (
-          <ul className={s.list}>
-            {news.map(({ date, id, title, link, photoName }) => (
-              <li key={id} className={s.item}>
-                <a href={link}>
-                  <Image
-                    className={s.img}
-                    src={`/uploads/${photoName}`}
-                    width={320}
-                    height={180}
-                    alt={title}
-                  />
-                  <div className={s.cardBody}>
-                    <h3 className={s.cardTitle}>{title[lang]}</h3>
-                    <div className={s.bottomBlock}>
-                      <span className={s.date}>{date}</span>
-                      <button className={s.details}>
-                        {translations[lang].news.details}
-                      </button>
-                    </div>
-                  </div>
-                </a>
-              </li>
-            ))}
-          </ul>
+          <>
+            <ul className={s.list}>
+              {news
+                .slice(0, visibleNews)
+                .map(({ date, id, title, link, photoName }) => (
+                  <li key={id} className={s.item}>
+                    <a href={link}>
+                      <Image
+                        className={s.img}
+                        src={`/uploads/${photoName}`}
+                        width={320}
+                        height={180}
+                        alt={title}
+                      />
+                      <div className={s.cardBody}>
+                        <h3 className={s.cardTitle}>{title[lang]}</h3>
+                        <div className={s.bottomBlock}>
+                          <span className={s.date}>{date}</span>
+                          <button className={s.details}>
+                            {translations[lang].news.details}
+                          </button>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                ))}
+            </ul>
+            {visibleNews !== news.length && (
+              <button
+                className={`${s.details} ${s.loadMore}`}
+                type="button"
+                onClick={handleLoadMore}
+              >
+                {translations[lang].news.loadMore}
+              </button>
+            )}
+          </>
         ) : (
           <>
             <div className={s.swiperWrapper}>

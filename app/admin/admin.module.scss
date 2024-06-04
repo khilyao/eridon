@@ -7,7 +7,7 @@
 }
 
 .title {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 
   text-transform: uppercase;
   text-align: center;
@@ -39,6 +39,11 @@
 
   border: none;
   border-radius: 6px;
+}
+
+.photoTip {
+  display: inline-block;
+  margin-bottom: 8px;
 }
 
 .submitBtn {
