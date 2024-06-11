@@ -173,7 +173,8 @@
       "placePlaceholder": "Location",
       "squarePlaceholder": "Area",
       "culturePlaceholder": "Crop",
-      "submit": "Submit"
+      "submit": "Submit",
+      "message": "The request has been successfully sent!"
     },
     "news": {
       "title": "News",
@@ -396,7 +397,8 @@
       "placePlaceholder": "Место нахождения",
       "squarePlaceholder": "Площадь",
       "culturePlaceholder": "Культура",
-      "submit": "Отправить"
+      "submit": "Отправить",
+      "message": "Заявка успешно отправлена!"
     },
     "news": {
       "title": "Новости",
@@ -626,7 +628,8 @@
       "placePlaceholder": "Орналасу орны",
       "squarePlaceholder": "Алаң",
       "culturePlaceholder": "Несім",
-      "submit": "Жіберу"
+      "submit": "Жіберу",
+      "message": "Өтінім сәтті жіберілді!"
     },
     "news": {
       "title": "Жаңалықтар",

@@ -125,14 +125,16 @@
   transition: opacity 150ms linear;
 
   &.loading {
-    transform: scale(0.7);
-    max-height: 200px;
+    transform: scale(0.8);
 
     & .field {
       opacity: 0;
     }
 
     &.loading::before {
+      max-height: 200px;
+      margin-top: 30px;
+
       content: "";
       position: absolute;
       top: 0;
@@ -143,7 +145,7 @@
       background-size: cover;
       background-position: center;
       background-blend-mode: overlay;
-      background-color: rgb(237, 237, 237, 0.8);
+      background-color: rgb(132, 132, 132);
       z-index: 10;
       animation: pulse 1.5s infinite;
     }
@@ -190,5 +192,24 @@
 
   @media screen and (min-width: 1024px) {
     height: 40px;
+  }
+}
+
+.successMessage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 18px;
+  font-weight: 500;
+
+  color: rgb(58, 127, 58);
+
+  height: 312px;
+  width: 168px;
+
+  @media screen and (min-width: 1024px) {
+    height: 337px;
+    width: auto;
   }
 }

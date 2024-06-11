@@ -3,7 +3,7 @@ import s from "./agricultural.module.scss";
 import { useForm, SubmitHandler } from "react-hook-form";
 import formImg from "@assets/formImg.png";
 import { useMediaQuery } from "@/hooks/useMediaQuery";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useLang } from "@/hooks/useLang";
 
 type Inputs = {
@@ -26,7 +26,16 @@ const Agricultural = () => {
   } = useForm<Inputs>();
   const isMedia1024 = useMediaQuery(1024);
   const [isLoading, setIsLoading] = useState<boolean>(false);
+  const [isSubmitted, setIsSubmitted] = useState<boolean>(false);
   const { lang, translations } = useLang();
+
+  useEffect(() => {
+    if (isSubmitted) {
+      setTimeout(() => {
+        setIsSubmitted(false);
+      }, 2000);
+    }
+  }, [isSubmitted]);
 
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
     const formData = new FormData();
@@ -42,15 +51,14 @@ const Agricultural = () => {
       });
 
       if (!response.ok) {
-        console.log("falling over");
         throw new Error(`response status: ${response.status}`);
       }
       reset();
-
-      setIsLoading(false);
+      setIsSubmitted(true);
     } catch (err) {
       console.error(err);
       alert("Error, please try resubmitting the form");
+    } finally {
       setIsLoading(false);
     }
   };
@@ -73,94 +81,133 @@ const Agricultural = () => {
                   {translations[lang].agroconsulting.request}
                 </h3>
               )}
-
-              <div
-                className={`${s.fieldWrapper} ${
-                  isLoading && !isMedia1024 ? s.loading : ""
-                }`}
-              >
-                <input
-                  style={errors.name && { border: "2px solid #fc7c7c" }}
-                  type="text"
-                  disabled={isLoading}
-                  className={s.field}
-                  placeholder={
-                    translations[lang].agroconsulting.namePlaceholder
-                  }
-                  {...register("name", { required: true })}
-                />
-                <input
-                  style={errors.company && { border: "2px solid #fc7c7c" }}
-                  type="text"
-                  disabled={isLoading}
-                  className={s.field}
-                  placeholder={
-                    translations[lang].agroconsulting.companyPlaceholder
-                  }
-                  {...register("company", { required: true })}
-                />
-                <input
-                  style={errors.position && { border: "2px solid #fc7c7c" }}
-                  type="text"
-                  disabled={isLoading}
-                  className={s.field}
-                  placeholder={
-                    translations[lang].agroconsulting.positionPlaceHolder
-                  }
-                  {...register("position", { required: true })}
-                />
-                <input
-                  style={errors.phone && { border: "2px solid #fc7c7c" }}
-                  type="tel"
-                  disabled={isLoading}
-                  className={s.field}
-                  placeholder={
-                    translations[lang].agroconsulting.phonePlaceholder
-                  }
-                  {...register("phone", { required: true })}
-                />
-                <input
-                  style={errors.email && { border: "2px solid #fc7c7c" }}
-                  type="email"
-                  disabled={isLoading}
-                  className={s.field}
-                  placeholder="Email"
-                  {...register("email", { required: true })}
-                />
-                <input
-                  style={errors.place && { border: "2px solid #fc7c7c" }}
-                  type="text"
-                  disabled={isLoading}
-                  className={s.field}
-                  placeholder={
-                    translations[lang].agroconsulting.placePlaceholder
-                  }
-                  {...register("place", { required: true })}
-                />
-                <input
-                  style={errors.square && { border: "2px solid #fc7c7c" }}
-                  type="text"
-                  disabled={isLoading}
-                  className={s.field}
-                  placeholder={
-                    translations[lang].agroconsulting.squarePlaceholder
-                  }
-                  {...register("square", { required: true })}
-                />
-                <input
-                  style={errors.culture && { border: "2px solid #fc7c7c" }}
-                  type="text"
-                  disabled={isLoading}
-                  className={s.field}
-                  placeholder={
-                    translations[lang].agroconsulting.culturePlaceholder
-                  }
-                  {...register("culture", { required: true })}
-                />
-              </div>
-              <button className={s.submitBtn} type="submit">
-                {translations[lang].agroconsulting.submit}
-              </button>
+              {isSubmitted ? (
+                <p className={s.successMessage}>
+                  {translations[lang].agroconsulting.message}
+                </p>
+              ) : (
+                <>
+                  <div
+                    className={`${s.fieldWrapper} ${
+                      isLoading && !isMedia1024 ? s.loading : ""
+                    }`}
+                  >
+                    <input
+                      style={
+                        errors.name
+                          ? { border: "2px solid #fc7c7c" }
+                          : undefined
+                      }
+                      type="text"
+                      disabled={isLoading}
+                      className={s.field}
+                      placeholder={
+                        translations[lang].agroconsulting.namePlaceholder
+                      }
+                      {...register("name", { required: true })}
+                    />
+                    <input
+                      style={
+                        errors.company
+                          ? { border: "2px solid #fc7c7c" }
+                          : undefined
+                      }
+                      type="text"
+                      disabled={isLoading}
+                      className={s.field}
+                      placeholder={
+                        translations[lang].agroconsulting.companyPlaceholder
+                      }
+                      {...register("company", { required: true })}
+                    />
+                    <input
+                      style={
+                        errors.position
+                          ? { border: "2px solid #fc7c7c" }
+                          : undefined
+                      }
+                      type="text"
+                      disabled={isLoading}
+                      className={s.field}
+                      placeholder={
+                        translations[lang].agroconsulting.positionPlaceHolder
+                      }
+                      {...register("position", { required: true })}
+                    />
+                    <input
+                      style={
+                        errors.phone
+                          ? { border: "2px solid #fc7c7c" }
+                          : undefined
+                      }
+                      type="tel"
+                      disabled={isLoading}
+                      className={s.field}
+                      placeholder={
+                        translations[lang].agroconsulting.phonePlaceholder
+                      }
+                      {...register("phone", { required: true })}
+                    />
+                    <input
+                      style={
+                        errors.email
+                          ? { border: "2px solid #fc7c7c" }
+                          : undefined
+                      }
+                      type="email"
+                      disabled={isLoading}
+                      className={s.field}
+                      placeholder="Email"
+                      {...register("email", { required: true })}
+                    />
+                    <input
+                      style={
+                        errors.place
+                          ? { border: "2px solid #fc7c7c" }
+                          : undefined
+                      }
+                      type="text"
+                      disabled={isLoading}
+                      className={s.field}
+                      placeholder={
+                        translations[lang].agroconsulting.placePlaceholder
+                      }
+                      {...register("place", { required: true })}
+                    />
+                    <input
+                      style={
+                        errors.square
+                          ? { border: "2px solid #fc7c7c" }
+                          : undefined
+                      }
+                      type="text"
+                      disabled={isLoading}
+                      className={s.field}
+                      placeholder={
+                        translations[lang].agroconsulting.squarePlaceholder
+                      }
+                      {...register("square", { required: true })}
+                    />
+                    <input
+                      style={
+                        errors.culture
+                          ? { border: "2px solid #fc7c7c" }
+                          : undefined
+                      }
+                      type="text"
+                      disabled={isLoading}
+                      className={s.field}
+                      placeholder={
+                        translations[lang].agroconsulting.culturePlaceholder
+                      }
+                      {...register("culture", { required: true })}
+                    />
+                  </div>
+                  <button className={s.submitBtn} type="submit">
+                    {translations[lang].agroconsulting.submit}
+                  </button>
+                </>
+              )}
             </form>
           </div>
         </div>
