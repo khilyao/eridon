@@ -18,16 +18,21 @@ const SideBar = () => {
 
   const handleSwitchLang = (lang: string) => {
     setLang(lang as AllowedLangs);
-    localStorage.setItem("lang", JSON.stringify(lang));
+    localStorage.setItem("lang", lang);
   };
 
-  const handleChangeLang = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    const selectedLang = event.target.value;
+  const handleChangeLang = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const selectedLang = e.target.value;
     handleSwitchLang(selectedLang);
   };
 
   useEffect(() => {
     const bodyRef = document.body;
+    const currentLang = localStorage.getItem("lang");
+
+    if (currentLang) {
+      setLang(currentLang as AllowedLangs);
+    }
 
     if (bodyRef) {
       if (isSideBarOpen) {
