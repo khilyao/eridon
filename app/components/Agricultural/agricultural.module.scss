@@ -125,7 +125,14 @@
   transition: opacity 150ms linear;
 
   &.loading {
-    &::before {
+    transform: scale(0.7);
+    max-height: 200px;
+
+    & .field {
+      opacity: 0;
+    }
+
+    &.loading::before {
       content: "";
       position: absolute;
       top: 0;
@@ -136,8 +143,8 @@
       background-size: cover;
       background-position: center;
       background-blend-mode: overlay;
-      background-color: rgba(0, 0, 0, 0.1);
-      z-index: 6;
+      background-color: rgb(237, 237, 237, 0.8);
+      z-index: 10;
       animation: pulse 1.5s infinite;
     }
   }

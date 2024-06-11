@@ -75,7 +75,6 @@ const Agricultural = () => {
               )}
 
               <div
-                style={{ opacity: isLoading ? "0.75" : "1" }}
                 className={`${s.fieldWrapper} ${
                   isLoading && !isMedia1024 ? s.loading : ""
                 }`}
@@ -83,6 +82,7 @@ const Agricultural = () => {
                 <input
                   style={errors.name && { border: "2px solid #fc7c7c" }}
                   type="text"
+                  disabled={isLoading}
                   className={s.field}
                   placeholder={
                     translations[lang].agroconsulting.namePlaceholder
@@ -92,6 +92,7 @@ const Agricultural = () => {
                 <input
                   style={errors.company && { border: "2px solid #fc7c7c" }}
                   type="text"
+                  disabled={isLoading}
                   className={s.field}
                   placeholder={
                     translations[lang].agroconsulting.companyPlaceholder
@@ -101,6 +102,7 @@ const Agricultural = () => {
                 <input
                   style={errors.position && { border: "2px solid #fc7c7c" }}
                   type="text"
+                  disabled={isLoading}
                   className={s.field}
                   placeholder={
                     translations[lang].agroconsulting.positionPlaceHolder
@@ -110,6 +112,7 @@ const Agricultural = () => {
                 <input
                   style={errors.phone && { border: "2px solid #fc7c7c" }}
                   type="tel"
+                  disabled={isLoading}
                   className={s.field}
                   placeholder={
                     translations[lang].agroconsulting.phonePlaceholder
@@ -119,6 +122,7 @@ const Agricultural = () => {
                 <input
                   style={errors.email && { border: "2px solid #fc7c7c" }}
                   type="email"
+                  disabled={isLoading}
                   className={s.field}
                   placeholder="Email"
                   {...register("email", { required: true })}
@@ -126,6 +130,7 @@ const Agricultural = () => {
                 <input
                   style={errors.place && { border: "2px solid #fc7c7c" }}
                   type="text"
+                  disabled={isLoading}
                   className={s.field}
                   placeholder={
                     translations[lang].agroconsulting.placePlaceholder
@@ -135,6 +140,7 @@ const Agricultural = () => {
                 <input
                   style={errors.square && { border: "2px solid #fc7c7c" }}
                   type="text"
+                  disabled={isLoading}
                   className={s.field}
                   placeholder={
                     translations[lang].agroconsulting.squarePlaceholder
@@ -144,6 +150,7 @@ const Agricultural = () => {
                 <input
                   style={errors.culture && { border: "2px solid #fc7c7c" }}
                   type="text"
+                  disabled={isLoading}
                   className={s.field}
                   placeholder={
                     translations[lang].agroconsulting.culturePlaceholder
