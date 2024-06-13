@@ -8,8 +8,6 @@ export type Post = {
     en: string;
     kz: string;
   };
-  date: string;
-  id: string;
 };
 
 export const fetchAllNews = () => {
