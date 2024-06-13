@@ -5,7 +5,6 @@ export async function POST(req: NextRequest) {
   const password = process.env.NEXT_PUBLIC_BURNER_PASSWORD;
   const myEmail = process.env.NEXT_PUBLIC_PERSONAL_EMAIL;
 
-  console.log("dealing with request");
   const formData = await req.formData();
   const name = formData.get("name") as string | null;
   const company = formData.get("company") as string | null;

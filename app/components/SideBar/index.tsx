@@ -65,7 +65,7 @@ const SideBar = () => {
   return (
     <aside className={s.aside} style={asideStyles()}>
       <ul className={s.list}>
-        <li>
+        <li className={s.item}>
           <Link
             className={s.link}
             href="#about"
@@ -77,7 +77,7 @@ const SideBar = () => {
             {translations[lang].header.company}
           </Link>
         </li>
-        <li>
+        <li className={s.item}>
           <Link
             className={s.link}
             href="#solutions"
@@ -89,7 +89,7 @@ const SideBar = () => {
             {translations[lang].header.solution}
           </Link>
         </li>
-        <li>
+        <li className={s.item}>
           <Link
             className={s.link}
             href="#news"
@@ -101,7 +101,7 @@ const SideBar = () => {
             {translations[lang].header.news}
           </Link>
         </li>
-        <li>
+        <li className={s.item}>
           <Link
             className={s.link}
             href="#contacts"

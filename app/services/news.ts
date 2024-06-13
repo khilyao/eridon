@@ -1,8 +1,6 @@
 import axios from "axios";
 
-axios.defaults.baseURL = `https://${process.env.NEXT_PUBLIC_MOCK_API_KEY}.mockapi.io`;
-
-type Post = {
+export type Post = {
   photoName: string;
   link: string;
   title: {
@@ -10,12 +8,14 @@ type Post = {
     en: string;
     kz: string;
   };
+  date: string;
+  id: string;
 };
 
 export const fetchAllNews = () => {
-  return axios.get("/news");
+  return axios.get("/api/news");
 };
 
 export const addNewPost = (data: Post) => {
-  return axios.post("/news", data);
+  return axios.post("/api/news", data);
 };

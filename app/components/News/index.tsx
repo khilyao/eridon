@@ -1,7 +1,7 @@
-import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Swiper as SwiperClass } from "swiper"; // Import the Swiper type
 import "swiper/css";
+import Image from "next/image";
 import s from "./news.module.scss";
 import { fetchAllNews } from "@/app/services/news";
 import { useEffect, useState } from "react";
@@ -9,9 +9,10 @@ import { useMediaQuery } from "@/hooks/useMediaQuery";
 import ArrowLeft from "@assets/arrowLeft.svg";
 import ArrowRight from "@assets/arrowRight.svg";
 import { useLang } from "@/hooks/useLang";
+import { Post } from "@/app/services/news";
 
 const News = () => {
-  const [news, setNews] = useState([]);
+  const [news, setNews] = useState<Post[]>([]);
   const isMedia1024 = useMediaQuery(1024);
   const [visibleNews, setVisibleNews] = useState(3);
   const [swiper, setSwiper] = useState<SwiperClass | null>(null);
@@ -63,7 +64,7 @@ const News = () => {
                         src={`/uploads/${photoName}`}
                         width={320}
                         height={180}
-                        alt={title}
+                        alt={title[lang]}
                       />
                       <div className={s.cardBody}>
                         <h3 className={s.cardTitle}>{title[lang]}</h3>
@@ -110,7 +111,7 @@ const News = () => {
                         src={`/uploads/${photoName}`}
                         width={370}
                         height={186}
-                        alt={title}
+                        alt={title[lang]}
                       />
                       <div className={s.cardBody}>
                         <h3 className={s.cardTitle}>{title[lang]}</h3>
