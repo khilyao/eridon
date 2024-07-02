@@ -1,11 +1,9 @@
 import Image from "next/image";
 import s from "./contacts.module.scss";
 import map from "@assets/map.png";
-import { useMediaQuery } from "@/hooks/useMediaQuery";
 import { useLang } from "@/hooks/useLang";
 
 const Contacts = () => {
-  const isMedia1024 = useMediaQuery(1024);
   const { lang, translations } = useLang();
   return (
     <section id="contacts" className={s.section}>
@@ -226,12 +224,7 @@ const Contacts = () => {
               </ul>
             </li>
           </ul>
-          <Image
-            src={map}
-            width={isMedia1024 ? 340 : 758}
-            height={isMedia1024 ? 253 : 563}
-            alt="map"
-          />
+          <Image src={map} className={s.picture} alt="map" />
         </div>
       </div>
     </section>

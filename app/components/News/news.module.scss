@@ -111,6 +111,13 @@
 
   cursor: pointer;
 
+  transition: background-color 200ms linear;
+
+  &:hover,
+  &:focus {
+    background-color: #e6a501;
+  }
+
   @media screen and (min-width: 1024px) {
     padding: 10px 15px;
 

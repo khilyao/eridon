@@ -41,7 +41,7 @@
 
 .backdoor {
   margin: 0 8px;
-  padding: 24px 32px 42px 16px;
+  padding: 24px 20px 42px 16px;
   background: linear-gradient(
     150.95deg,
     rgb(243, 242, 242) -5.772%,
@@ -82,10 +82,6 @@
   width: 100px;
   height: 101px;
   margin-right: 20px;
-
-  @media screen and (min-width: 380px) {
-    margin-right: 47px;
-  }
 
   @media screen and (min-width: 768px) {
     width: 200px;
