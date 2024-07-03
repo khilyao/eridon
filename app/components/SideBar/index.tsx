@@ -33,7 +33,6 @@ const SideBar = () => {
     if (currentLang) {
       setLang(currentLang as AllowedLangs);
     }
-    setLang("en" as AllowedLangs);
 
     if (bodyRef) {
       if (isSideBarOpen) {
