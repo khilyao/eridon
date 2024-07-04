@@ -62,7 +62,7 @@ const About = () => {
             <Image
               className={s.cardImg}
               src={director}
-              width={isMedia1024 ? 136 : 288}
+              width={isMedia1024 ? 200 : 288}
               alt={translations[lang].aboutCompany.directorName}
             />
 
