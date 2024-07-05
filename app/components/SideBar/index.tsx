@@ -32,7 +32,6 @@ const SideBar = () => {
     if (currentLang) {
       setLang(currentLang as AllowedLangs);
     }
-    setLang("ru" as AllowedLangs);
   }, [isSideBarOpen]);
 
   const asideStyles = () => {
