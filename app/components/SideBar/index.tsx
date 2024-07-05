@@ -27,32 +27,18 @@ const SideBar = () => {
   };
 
   useEffect(() => {
-    const bodyRef = document.body;
     const currentLang = localStorage.getItem("lang");
 
     if (currentLang) {
       setLang(currentLang as AllowedLangs);
     }
-
-    if (bodyRef) {
-      if (isSideBarOpen) {
-        bodyRef.classList.add("no-scroll");
-      } else {
-        bodyRef.classList.remove("no-scroll");
-      }
-    }
-
-    return () => {
-      if (bodyRef) {
-        bodyRef.classList.remove("no-scroll");
-      }
-    };
+    setLang("ru" as AllowedLangs);
   }, [isSideBarOpen]);
 
   const asideStyles = () => {
     if (isMedia1024) {
       return {
-        transform: isSideBarOpen || !isMedia1024 ? "translateX(-100%)" : "",
+        transform: isSideBarOpen || !isMedia1024 ? "translateY(0)" : "",
         opacity: isSideBarOpen || !isMedia1024 ? "1" : "0",
       };
     }

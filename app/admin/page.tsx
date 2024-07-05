@@ -75,9 +75,7 @@ const Admin = () => {
         data.photoName = newFileName;
         data.date = formatDate(new Date());
         await addNewPost(data);
-        fetch(
-          "https://api.vercel.com/v1/integrations/deploy/prj_sYbGTrSRNuQQpAvnFtEq5dXRnr1z/aiqH6PVCQG"
-        );
+
         reset();
         setMessage("File uploaded and form submitted successfully");
       } else {

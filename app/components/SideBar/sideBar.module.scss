@@ -1,14 +1,15 @@
 .aside {
   position: fixed;
   top: 0;
-  left: 100%;
+  left: 0;
+  transform: translateY(-100%);
+  opacity: 1 !important;
 
   width: 100vw;
-  height: 100vh;
 
-  padding: 110px 40px 120px;
+  padding: 80px 40px 30px;
 
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9);
 
   opacity: 0;
   transition: transform 200ms linear, opacity 350ms linear;
@@ -25,6 +26,8 @@
     padding: 0;
 
     background: transparent;
+
+    transform: translate(0);
   }
 }
 
@@ -39,15 +42,14 @@
   display: flex;
   flex-direction: column;
 
-  gap: 16px;
-  margin-bottom: 40px;
+  gap: 8px;
+  margin-bottom: 20px;
   text-align: center;
 
   font-family: "Helvetica Neue";
   font-size: 14px;
   font-weight: 700;
   line-height: 1.8;
-  text-decoration: underline;
 
   color: rgb(43, 43, 43);
   list-style: none;
@@ -98,12 +100,12 @@
 
 .helper {
   display: inline-block;
-  padding: 4px 12px;
+  padding: 6px 12px;
 
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 
   font-family: "Helvetica Neue";
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 700;
   line-height: 1.8;
 
@@ -122,19 +124,24 @@
   }
 
   @media screen and (min-width: 1024px) {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  @media screen and (min-width: 1024px) {
     margin-bottom: 0;
     margin-right: 10px;
   }
 
   @media screen and (min-width: 1100px) {
     margin-right: 30px;
-
-    font-size: 16px;
-    line-height: 1.5;
   }
 
   @media screen and (min-width: 1280px) {
     margin-right: 24px;
+
+    font-size: 16px;
+    line-height: 1.5;
   }
 
   @media screen and (min-width: 1536px) {
