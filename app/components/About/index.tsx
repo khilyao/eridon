@@ -15,7 +15,7 @@ const About = () => {
   const { lang, translations } = useLang();
 
   return (
-    <section className={s.about} id="about">
+    <section className={s.about} id="company">
       <div className="container">
         <h2 className={s.title}>
           {translations[lang].aboutCompany.sectionTitle}

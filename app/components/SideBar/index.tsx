@@ -3,6 +3,7 @@ import Link from "next/link";
 import s from "./sideBar.module.scss";
 import { storeContext } from "@context/context";
 import { useContext, useEffect } from "react";
+import { Section } from "@/lib/types/section";
 import { useMediaQuery } from "@/hooks/useMediaQuery";
 import { useScrollWithOffset } from "@/hooks/useScrollWithOffset";
 import { useLang } from "@/hooks/useLang";
@@ -47,57 +48,25 @@ const SideBar = () => {
     };
   };
 
+  const sections: Section[] = ["company", "solutions", "news", "contacts"];
+
   return (
     <aside className={s.aside} style={asideStyles()}>
       <ul className={s.list}>
-        <li className={s.item}>
-          <Link
-            className={s.link}
-            href="#about"
-            onClick={(e) => {
-              handleScrollWithOffset(e.nativeEvent);
-              setIsSideBarOpen(false);
-            }}
-          >
-            {translations[lang].header.company}
-          </Link>
-        </li>
-        <li className={s.item}>
-          <Link
-            className={s.link}
-            href="#solutions"
-            onClick={(e) => {
-              handleScrollWithOffset(e.nativeEvent);
-              setIsSideBarOpen(false);
-            }}
-          >
-            {translations[lang].header.solution}
-          </Link>
-        </li>
-        <li className={s.item}>
-          <Link
-            className={s.link}
-            href="#news"
-            onClick={(e) => {
-              handleScrollWithOffset(e.nativeEvent);
-              setIsSideBarOpen(false);
-            }}
-          >
-            {translations[lang].header.news}
-          </Link>
-        </li>
-        <li className={s.item}>
-          <Link
-            className={s.link}
-            href="#contacts"
-            onClick={(e) => {
-              handleScrollWithOffset(e.nativeEvent);
-              setIsSideBarOpen(false);
-            }}
-          >
-            {translations[lang].header.contact}
-          </Link>
-        </li>
+        {sections.map((section, index) => (
+          <li key={index} className={s.item}>
+            <Link
+              className={s.link}
+              href={`#${section}`}
+              onClick={(e) => {
+                handleScrollWithOffset(e.nativeEvent);
+                setIsSideBarOpen(false);
+              }}
+            >
+              {translations[lang].header[section]}
+            </Link>
+          </li>
+        ))}
       </ul>
       <Link
         className={`${s.link} ${s.helper}`}

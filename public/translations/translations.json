@@ -2,9 +2,9 @@
   "en": {
     "header": {
       "company": "About company",
-      "solution": "Solutions",
+      "solutions": "Solutions",
       "news": "News",
-      "contact": "Contacts",
+      "contacts": "Contacts",
       "help": "Agroconsultation"
     },
     "hero": {
@@ -226,9 +226,9 @@
     },
     "footer": {
       "company": "About company",
-      "solution": "Solutions",
+      "solutions": "Solutions",
       "news": "News",
-      "contact": "Contacts",
+      "contacts": "Contacts",
       "dateOfBirth": "Eridon Kazakhstan 2024",
       "policy": "You accept the \"privacy policy\""
     }
@@ -236,9 +236,9 @@
   "ru": {
     "header": {
       "company": "О компании",
-      "solution": "Готовые решения",
+      "solutions": "Готовые решения",
       "news": "Новости",
-      "contact": "Контакты",
+      "contacts": "Контакты",
       "help": "Агроконсультация"
     },
     "hero": {
@@ -450,9 +450,9 @@
     },
     "footer": {
       "company": "О компании",
-      "solution": "Готовые решения",
+      "solutions": "Готовые решения",
       "news": "Новости",
-      "contact": "Контакты",
+      "contacts": "Контакты",
       "dateOfBirth": "Эридон Казахстан 2024",
       "policy": "Вы принимаете \"Политику конфиденциальности\""
     }
@@ -460,9 +460,9 @@
   "kz": {
     "header": {
       "company": "Компания жайлы",
-      "solution": "Дайын шешімдер",
+      "solutions": "Дайын шешімдер",
       "news": "Жаңалықтар",
-      "contact": "Контактілер",
+      "contacts": "Контактілер",
       "help": "Агроконсультация"
     },
     "hero": {
@@ -681,9 +681,9 @@
     },
     "footer": {
       "company": "Компания жайлы",
-      "solution": "Дайын шешімдер",
+      "solutions": "Дайын шешімдер",
       "news": "Жаңалықтар",
-      "contact": "Контактілер",
+      "contacts": "Контактілер",
       "dateOfBirth": "Эридон Қазақстан 2024",
       "policy": "Сіз \"құпиялылық саясатын\" қабылдайсыз"
     }
