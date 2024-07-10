@@ -21,7 +21,6 @@ const Footer = () => {
           </Link>
           <ul className={s.list}>
             {sections.map((section, index) => {
-              console.log(section);
               return (
                 <li key={index} className={s.item}>
                   <Link className={s.link} href={`#${section}`}>

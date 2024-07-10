@@ -58,7 +58,7 @@ const News = () => {
                 .slice(0, visibleNews)
                 .map(({ date, id, title, link, photoName }) => (
                   <li key={id} className={s.item}>
-                    <a href={link}>
+                    <a href={link} target="_blank">
                       <Image
                         className={s.img}
                         src={`/uploads/${photoName}`}
